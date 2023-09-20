@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "mermaid": "^10.4.0",
+    "vitepress": "^1.0.0-rc.14",
+    "vitepress-plugin-mermaid": "^2.0.14"
+  },
+  "scripts": {
+    "docs:dev": "vitepress --host test.latrup.net dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  }
+}
