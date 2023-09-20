@@ -19,8 +19,10 @@
 - Add docuemate and AI support?
 - I18N???
 
+- Hide tutorials from menus or show them just based on IP, for example
+
 ## Infrastructure
 - Talk to Estanis for the deployment of all of this. Unil then, use your own repo
 
 ## Content
-- Create the PHP transformer from JSON to MD (Use chappy)
+- Create the PHP transformer from JSON to MD (Use chappy) Use a dataloader, provably and vue code for loops and iterations: https://vitepress.dev/guide/data-loading#data-from-local-files

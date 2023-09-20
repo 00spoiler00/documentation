@@ -13,6 +13,8 @@ Somehow, it should be transformed to '##' for each spec and a table. Use maybe a
 Example output:
 :::
 
+[[toc]]
+
 ## ActividadesAcciones
 **Aliases**:  AAA, BBB
 
