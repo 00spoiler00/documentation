@@ -21,6 +21,8 @@ Example output:
 | TipoAgenteDestino1 | string | 0 | 100 | Used to do a thing | A,b,c |
 | TipoAgenteDestino2 | string | 0 | 100 | Used to do a long thing | A,b,c |
 | TipoAgenteDestino3 | string | 0 | 100 | Used to do a very, very long thing | AAAA,bbbb,ccccc |
+| TipoAgenteDestino2 | string | 0 | 100 | Used to do a long thing | A,b,c |
+| TipoAgenteDestino3 | string | 0 | 100 | Used to do a very, very long thing | AAAA,bbbb,ccccc |
 
 ## ActividadesAcciones2
 **Aliases**:  AAA, BBB
@@ -28,6 +30,15 @@ Example output:
 | Field | Type | Min | Max | Description |  Aliases |
 | ------------- | ----------- | ----: | ----: | ---- | ----|
 | TipoAgenteDestino | string | 0 | 100 | Used to do a thing | A,b,c |
+| TipoAgenteDestino | string | 0 | 100 | Used to do a long thing | A,b,c |
+| TipoAgenteDestino | string | 0 | 100 | Used to do a very, very long thing | AAAA,bbbb,ccccc |
+| TipoAgenteDestino | string | 0 | 100 | Used to do a long thing | A,b,c |
+| TipoAgenteDestino | string | 0 | 100 | Used to do a long thing | A,b,c |
+| TipoAgenteDestino | string | 0 | 100 | Used to do a very, very long thing | AAAA,bbbb,ccccc |
+| TipoAgenteDestino | string | 0 | 100 | Used to do a long thing | A,b,c |
+| TipoAgenteDestino | string | 0 | 100 | Used to do a long thing | A,b,c |
+| TipoAgenteDestino | string | 0 | 100 | Used to do a very, very long thing | AAAA,bbbb,ccccc |
+| TipoAgenteDestino | string | 0 | 100 | Used to do a long thing | A,b,c |
 | TipoAgenteDestino | string | 0 | 100 | Used to do a long thing | A,b,c |
 | TipoAgenteDestino | string | 0 | 100 | Used to do a very, very long thing | AAAA,bbbb,ccccc |
 
