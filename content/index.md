@@ -8,11 +8,14 @@ hero:
   tagline: The UVE Developer Portal is meticulously crafted to offer all the resources you need for seamless development experiences.
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Nomenclators
+      link: /api/dataIntegration/nomenclators
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Integration API
+      link: /api/dataIntegration/api
+    - theme: alt
+      text: Async task management API
+      link: /api/taskManagement/index
 
 features:
   - title: APIs
