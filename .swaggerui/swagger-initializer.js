@@ -5,8 +5,8 @@ window.onload = function () {
   window.ui = SwaggerUIBundle({
     // url: "definitions/task_api_callback/task_api.yaml",
     urls: [
-      { url: "../api/taskManagement/taskManagement.yaml", name: "taskManagement" },
-      { url: "../api/dataIntegration/dataIntegration.json", name: "dataIntegration" },
+      { url: "../content/api/taskManagement/taskManagement.yaml", name: "taskManagement" },
+      { url: "../content/api/dataIntegration/dataIntegration.json", name: "dataIntegration" },
     ],
     dom_id: '#swagger-ui',
     deepLinking: true,

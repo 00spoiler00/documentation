@@ -47,6 +47,14 @@ download_url: In case the new state produces an output, this will be the URL enc
 
 ## Flow schema
 
+```mermaid
+sequenceDiagram
+    Customer ->> API: Create task
+    Customer ->> API: Get task
+    Customer ->> API: Get tasks
+    API ->> Customer: callback
+```
+
 ## Specification and test
 
 <iframe src="https://test.latrup.net/uve-developer-portal/.swaggerui/?urls.primaryName=taskManagement" style="width: 100%; height:700px; border:0px" />

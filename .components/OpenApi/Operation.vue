@@ -2,22 +2,25 @@
   <div>
 
     <h2 v-html="operation.id" />
-    <h3 v-html="operation.summary" />
-    <p v-html="operation.description" />
+    <p v-html="cleanDescription" />
 
-    <table style="width: 100%;">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Format</th>
-          <th>Required</th>
-          <th>MinLength</th>
-          <th>MaxLength</th>
-        </tr>
-      </thead>
+    <table style="width: 500px">
 
       <tbody>
         <template v-for="field in operation.fields">
+
+          <tr>
+            <td colspan="5" v-html="'<b>Field:</b> ' + field.name" />
+          </tr>
+
+          <tr>
+            <th>Type</th>
+            <th>Format</th>
+            <th>Required</th>
+            <th>MinLength</th>
+            <th>MaxLength</th>
+          </tr>
+
           <tr>
             <td v-html="field.type" />
             <td v-html="field.format" />
@@ -25,12 +28,11 @@
             <td v-html="field.minLength" />
             <td v-html="field.maxLength" />
           </tr>
+
           <tr>
-            <td colspan="5" v-html="field.name" />
+            <td colspan="5" v-html="field.description.replace('<br /><b>Description</b><br />', '')" />
           </tr>
-          <tr>
-            <td colspan="5" v-html="field.description" />
-          </tr>
+
         </template>
       </tbody>
 
@@ -47,6 +49,12 @@ export default {
     operation: {
       type: Object,
       required: true
+    }
+  },
+
+  computed: {
+    cleanDescription() {
+      return this.operation.description.substring(0, this.operation.description.indexOf("<br/><br/><b>Description</b>"));
     }
   }
 

@@ -1,5 +1,5 @@
 import { withMermaid } from "vitepress-plugin-mermaid"
-import sidebar from "../sidebarMenus"
+import sidebar from "../content/menus"
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({

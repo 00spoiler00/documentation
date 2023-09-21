@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: Async task management API
       link: /api/taskManagement/index
+    - theme: brand
+      text: QuickGuide for content creators
+      link: /cms/index
 
 features:
   - title: APIs

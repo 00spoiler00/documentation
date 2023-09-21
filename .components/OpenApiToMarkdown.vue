@@ -40,8 +40,6 @@ export default {
       const response = await fetch(this.url)
       const openApiJson = await response.json()
 
-      console.log(openApiJson)
-
       if (!openApiJson.paths) {
         this.operations = []
         return
