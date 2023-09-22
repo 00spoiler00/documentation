@@ -1,7 +1,6 @@
 # TODOs
 
 ## NOW:
-- Create Repo!
 - Create a script to convert Nomenclators to MDs:
 ~~1. Download the JSON, ~~
 2. Clean content (later, user an easier json from UVEAPI)
@@ -9,6 +8,7 @@
 ~~4. Create a markdown file, named /content/nomenclators/dynamic/recordDefinitions/all.md, containing nested MD files for all chunks~~
 
 - Create the daily cron that performs builds dynamic content
+- Set theme colors
 
 - Hide internal tutorials from menus based on some criteria
 - Test and expand the content creator experience (only VSCode and Full NPM tutorial)
@@ -20,6 +20,7 @@
 - Add contents from consultores documents, translated if required.
 
 
+~~- Create Repo!~~
 ~~- Add Look&Feel (Logo&Favicon&Montserrat)~~
 ~~- Reorganize content and create the ETL/SipIn section (submenu?) with an 'All records' and a demo 'Type 1', 'Type 2'~~
 ~~- Create a /ETL/SipIn/Custom/Customer1 (not visible/not searchable) as a demo~~

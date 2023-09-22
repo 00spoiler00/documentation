@@ -71,4 +71,4 @@ If you face any challenges during extraction or have questions about the process
 
 ## Available Records
 
-<!--@include: ./_sells_records_template.md -->
+<!--@include: ./_sells_records.md -->
