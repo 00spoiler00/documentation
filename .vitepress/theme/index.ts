@@ -1,3 +1,5 @@
+import OpenApiViewer from '../components/OpenApiViewer.vue'
+
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
@@ -11,6 +13,6 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    app.component('OpenApiViewer', OpenApiViewer)
   }
 }

@@ -1,26 +1,18 @@
 <template>
-  <div>
-    <operation v-for="operation in operations" :key="operation.id" :operation="operation" />
-  </div>
+  <iframe :src="url" style="width: 100%; height:900px; border:0px; margin:0px; padding:0px; overflow-x:hidden" />
 </template>
   
 <script>
 
-import Operation from './OpenApi/Operation.vue'
-
 export default {
 
-  name: 'OpenApiParser',
+  name: 'OpenApiViewer',
 
   props: {
     url: {
       required: true,
       type: String,
     },
-  },
-
-  components: {
-    Operation
   },
 
   data() {

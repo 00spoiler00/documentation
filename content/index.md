@@ -8,21 +8,18 @@ hero:
   tagline: The UVE Developer Portal is meticulously crafted to offer all the resources you need for seamless development experiences.
   actions:
     - theme: brand
-      text: Nomenclators
-      link: /api/dataIntegration/nomenclators
-    - theme: alt
-      text: Integration API
-      link: /api/dataIntegration/api
-    - theme: alt
+      text: ETL Documentation
+      link: /etl/index
+    - theme: brand
       text: Async task management API
       link: /api/taskManagement/index
-    - theme: brand
+    - theme: alt
       text: QuickGuide for content creators
       link: /cms/index
 
 features:
   - title: APIs
-    details: All the specs about the UVE ecosystem
+    details: All the specs about the UVE ecosystem ⚡️
   - title: Nomenclators
     details: Schemas for Single Integration Processes
   - title: Flows & Processes

@@ -54,7 +54,3 @@ sequenceDiagram
     Customer ->> API: Get tasks
     API ->> Customer: callback
 ```
-
-## Specification and test
-
-<iframe src="https://test.latrup.net/uve-developer-portal/.swaggerui/?urls.primaryName=taskManagement" style="width: 100%; height:700px; border:0px" />

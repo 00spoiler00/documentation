@@ -1,24 +1,45 @@
 export default [
     {
-        text: 'APIs Documentation',
+        text: 'ETL',
+        collapsible: true,
         items: [
-            { text: 'Data Integration (Nomenclators)', link: '/api/dataIntegration/nomenclators' },
-            { text: 'Data Integration (API)', link: '/api/dataIntegration/api' },
-            { text: 'Task Management', link: '/api/taskManagement/index' },
+            { text: 'Quick Start', link: '/etl/index' },
+            {
+                text: 'SipIn',
+                link: '/etl/sipIn/index',
+                items: [
+                    { text: 'Full Records ⚠️', link: '/etl/sipIn/allRecords' },
+                    { text: 'API Specs', link: '/etl/sipIn/api' },
+                    { text: 'MarketFlash specific ⚠️', link: '/etl/sipIn/marketFlash' },
+                    { text: 'Sells specific ⚠️', link: '/etl/sipIn/sells' },
+                    { text: 'IPaaS', link: '/etl/sipIn/IPaaS' },
+                ]
+            },
+            { text: 'SipOut ⚠️', link: '/etl/sipOut/index' },
         ]
     },
     {
-        text: 'For content generators',
+        text: 'TaskManagement',
         items: [
-            { text: 'Markdown', link: '/cms/markdown' },
-            { text: 'Diagramming', link: '/cms/mermaid' },
-            // { text: 'Runtime API Examples', link: '/cms/api' },
+            { text: 'Quick Start', link: '/taskManagement/index' },
+            { text: 'API Specs', link: '/taskManagement/api' },
         ]
     },
     {
-        text: 'Development',
+        text: 'Content creators [i]',
+        items: [
+            { text: 'Quick Start', link: '/contentCreation/index' },
+            { text: 'Markdown', link: '/contentCreation/markdown' },
+            { text: 'Diagramming', link: '/contentCreation/mermaid' },
+            { text: 'Dynamic Content', link: '/contentCreation/dynamicContent' },
+        ]
+    },
+    {
+        text: 'Development [i]',
         items: [
             { text: 'TODO', link: '/development/todo' },
+            { text: 'TEST', link: '/development/test' },
+            { text: 'Converter TEST', link: '/test' },
         ]
     },
 ]
