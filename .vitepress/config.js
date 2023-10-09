@@ -7,25 +7,24 @@ export default withMermaid({
     lang: 'en-US',
     title: "UVE Developer Portal",
 
-
     description: "Discover the limitless potential of integrating and building upon UVE's robust suite of tools and APIs. As the gateway to a vibrant ecosystem, the UVE Developer Portal is meticulously crafted to offer all the resources you need for seamless development experiences.",
     head: [
         [
             'link',
             { rel: 'icon', href: '/favicon.ico' }
         ],
-        // [
-        //     'link',
-        //     { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
-        // ],
-        // [
-        //     'link',
-        //     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-        // ],
-        // [
-        //     'link',
-        //     { href: 'https://fonts.googleapis.com/css2?family=Kenia&display=swap', rel: 'stylesheet' }
-        // ]
+        [
+            'link',
+            { rel: 'stylesheet', href: '/css/fontawesome.css' }
+        ],
+        [
+            'link',
+            { rel: 'stylesheet', href: '/css/brands.css' }
+        ],
+        [
+            'link',
+            { rel: 'stylesheet', href: '/css/solid.css' }
+        ],
     ],
 
     cleanUrls: true,
@@ -49,11 +48,8 @@ export default withMermaid({
             provider: 'local'
         },
 
-        // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: 'Home', link: '/index' },
-            { text: 'Documentation', link: '/etl/index' },
-            { text: 'CMS Usage', link: '/contentCreation/index' },
         ],
 
         sidebar,

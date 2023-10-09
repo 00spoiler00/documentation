@@ -1,79 +1,54 @@
 <template>
-  <iframe :src="url" style="width: 100%; height:900px; border:0px; margin:0px; padding:0px; overflow-x:hidden" />
+  <div>
+    <h5>
+      Alternatively, the spec can be 
+      <b>
+        <a :href="src">downloaded</a>
+      </b> or read in the <b>
+        <a :href="fullscreenUrl" target="_blank">full screen viewer</a>
+      </b>.
+    </h5>
+    <br>
+    <iframe :src="url" :style="`width: 100%; height:${height}px; border:0px; margin:0px; padding:0px; overflow-x:hidden`" />
+  </div>
 </template>
   
 <script>
 
+import { useData } from 'vitepress'
+import { ref } from 'vue'
+
 export default {
+
+  setup() {
+    const { isDark } = useData()
+    let localIsDark = ref(isDark.value)
+    return {
+      localIsDark
+    }
+  },
 
   name: 'OpenApiViewer',
 
   props: {
-    url: {
+    src: {
       required: true,
       type: String,
     },
+    height: {
+      default: 900,
+      type: Number,
+    },
   },
 
-  data() {
-    return {
-      operations: []
-    }
-  },
+  computed: {
 
-  mounted() {
-    this.parseApiContent()
-  },
+    url() {
+      return `/swaggerui/index.html?url=${encodeURIComponent(this.src)}&theme=${(this.localIsDark ? 'dark' : 'light')}`
+    },
 
-  methods: {
-
-    async parseApiContent() {
-
-      const response = await fetch(this.url)
-      const openApiJson = await response.json()
-
-      if (!openApiJson.paths) {
-        this.operations = []
-        return
-      }
-
-      const operationsList = []
-
-      for (let path in openApiJson.paths) {
-        for (let method in openApiJson.paths[path]) {
-          const operationData = openApiJson.paths[path][method]
-          const operationObj = {
-            id: operationData.operationId,
-            summary: operationData.summary,
-            description: operationData.description,
-            fields: []
-          }
-
-          if (openApiJson.components && openApiJson.components.schemas && operationData.operationId in openApiJson.components.schemas) {
-
-            const schema = openApiJson.components.schemas[operationData.operationId]
-
-            for (let propName in schema.properties) {
-              const prop = schema.properties[propName]
-              const isRequired = schema.required && schema.required.includes(propName)
-
-              operationObj.fields.push({
-                name: propName,
-                description: prop.description || "",
-                type: prop.type || "",
-                format: prop.format || "",
-                example: prop.example || "",
-                minLength: prop.minLength || "",
-                maxLength: prop.maxLength || "",
-                required: isRequired
-              })
-            }
-          }
-
-          operationsList.push(operationObj)
-        }
-      }
-      this.operations = operationsList
+    fullscreenUrl() {
+      return `${this.url}&fullscreen=true`
     }
 
   },

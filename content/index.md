@@ -8,21 +8,22 @@ hero:
   tagline: The UVE Developer Portal is meticulously crafted to offer all the resources you need for seamless development experiences.
   actions:
     - theme: brand
-      text: ETL Documentation
-      link: /etl/index
-    - theme: brand
-      text: Async task management API
-      link: /api/taskManagement/index
+      text: About UVE Developer Portal 
+      link: /about
     - theme: alt
-      text: QuickGuide for content creators
-      link: /cms/index
+      text: Connecta API 
+      link: /api/connecta/
+    - theme: alt
+      text: Data access API
+      link: /api/data-access
+    - theme: alt
+      text: Task Management API
+      link: /api/task-management
 
 features:
-  - title: APIs
-    details: All the specs about the UVE ecosystem ⚡️
-  - title: Nomenclators
-    details: Schemas for Single Integration Processes
+  - title: API Definitions
+    details: All the specs about the UVE ecosystem, testeable inline ⚡️
   - title: Flows & Processes
-    details: General documentation about integration and data exchange flows
+    details: General documentation about our data exchange flows 🔌
 ---
 
