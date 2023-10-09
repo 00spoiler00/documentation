@@ -11,6 +11,7 @@ export default [
             },
             { text: 'CU Roadmap', link: '/new-connecta/cu-roadmap' },
             { text: 'Classmap', link: '/new-connecta/classmap' },
+            { text: 'Architecture', link: '/new-connecta/architecture' },
         ],
     },
 ]
