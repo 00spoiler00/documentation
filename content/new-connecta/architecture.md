@@ -14,9 +14,12 @@
 ### TBD:
 
 - Determine projects & solutions structures
-  - Microframeworks
-  - MonoRepo
-  - Nx?
+  - MonoRepo?
+  - What is a uService, a Library, etc.
+  - How do the projects & solutions group?
+- Determine frontend and uServices frontend strategies
+  - MicroFrontend & Lazy Loadings & MonoRepo (Nx?)
+  - Validate with Esteve
 - When CU need to use an extracted FN, will it use orchestration (aka tasks & flows) or just talk to the BE-API?
 - Who stores the blob when received?
 - Define the Interface to extract funcitionality from LegacyWorker (should have the launch, wait, blobManagement capabilities. Work in real cases)
