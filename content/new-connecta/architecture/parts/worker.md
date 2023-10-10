@@ -5,8 +5,9 @@
 - It uses a the profile/setup concept to allow each implementation to have it's own configuration
 - Use a local storage to store the profiles
 - The profiles in the local storage are exposed via a **setup API** the provides CRUD operations for them
-- The tasks are received via messages from the RabbitMq queues
+- The tasks are received via messages from the RabbitMq queues. Messages will contain **blobId & profileId**
 - They may have parallel threading or not. They expose this setting to the orchestrator, that may depend on the profile used.
+- Databases are common for each WorkerType cluster.
 
 ## Legacy workers
 

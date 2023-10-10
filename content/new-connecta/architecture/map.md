@@ -12,7 +12,7 @@ NEWCONNECTA_WORKER(((ORCHESTRATOR)))
 
 end
 
-subgraph "Legacy BIG Functions (CU/CE/CS/...)"
+subgraph "Legacy Worker (CU/CE/CS/...)"
 F1_DB[(DB)]
 F1_API(API)
 F1_WORKER(((WORKER)))
@@ -24,7 +24,7 @@ FS((FS))
     F1_WORKER<-.->FS
 
 end
-subgraph "[New || Extracted] 𝑓n (N)"
+subgraph "[New || Extracted] Worker (N)"
 F2_API(API)
 F2_DB[(DB)]
 F2_WORKER(((WORKER)))

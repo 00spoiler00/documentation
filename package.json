@@ -15,6 +15,6 @@
     "docs:build": "npm run updateDynamicContent && vitepress build",
     "updateDynamicContent": "node ./.vitepress/customizations/updateDynamicContent.js",
     "testInLocalContainer": "node ./.cicd/dockerization/run.js",
-    "testInRemoteServer": "npm run docs:build && scp -r .vitepress/dist/*  marc@test.latrup.net:/var/www/documentation.latrup.net/public/"
+    "deploy": "npm run docs:build && scp -r .vitepress/dist/*  marc@test.latrup.net:/var/www/documentation.latrup.net/public/"
   }
 }

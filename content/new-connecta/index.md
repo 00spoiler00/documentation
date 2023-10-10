@@ -29,7 +29,3 @@
   - How do the projects & solutions group?
   - MonoRepo
   - What is a uService, a Library, etc.
-
-## Other resources
-
-- [General Notes](notes)

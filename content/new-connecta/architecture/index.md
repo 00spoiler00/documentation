@@ -1,16 +1,16 @@
 # Architecture
 
-## Notes
+Please, refer to each specific section for details
 
-Create the CU Worker and API. The API will provide CRUD for the profiles (aka setups) which will be stored in its local storage
-
-APIs on WORKERS are used to configure the profiles or settings for the worker: Ex: CU uses a list of CuConfigs. Local storage in the unit has everything needed to run the **𝑓n**
-
-Queues are used to launch jobs. A typical message consists of: **_blobID_** (Or File in legacies) and a **_profileId_** for the jobSetup.
-
-Databases are common for each workerType cluster.
+- [Orchestrator](orchestrator.md)
+- [Worker](worker.md)
+- [Channel (WIP)](#)
 
 ## Core architecture map
+
+::: warning
+Channels are still WIP and not shown in this schema
+:::
 
 ```mermaid
 

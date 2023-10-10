@@ -13,10 +13,10 @@ export default [
                 ],
             },
             {
-                text: 'Phases',
-                link: '/new-connecta/phases/',
+                text: 'Implementation',
+                link: '/new-connecta/implementation-phases/',
                 items: [
-                    { text: '01', link: '/new-connecta/phases/01' },
+                    { text: 'Phase 01', link: '/new-connecta/implementation-phases/01' },
 
                 ],
             },
