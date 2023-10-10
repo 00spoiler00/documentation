@@ -5,9 +5,9 @@ import sidebar from "../content/menus"
 export default withMermaid({
 
     lang: 'en-US',
-    title: "UVE Developer Portal",
+    title: "Documentation",
 
-    description: "Discover the limitless potential of integrating and building upon UVE's robust suite of tools and APIs. As the gateway to a vibrant ecosystem, the UVE Developer Portal is meticulously crafted to offer all the resources you need for seamless development experiences.",
+    description: "Internal UVE documentation repository",
     head: [
         [
             'link',
@@ -42,7 +42,7 @@ export default withMermaid({
     themeConfig: {
 
         logo: "/logo.png",
-        siteTitle: "Developer Portal",
+        siteTitle: "Documentation",
 
         search: {
             provider: 'local'
