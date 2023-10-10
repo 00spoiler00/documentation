@@ -2,8 +2,8 @@
 
 Please, refer to each specific section for details
 
-- [Orchestrator](orchestrator.md)
-- [Worker](worker.md)
+- [Orchestrator](./parts/orchestrator.md)
+- [Worker](./parts/worker.md)
 - [Channel (WIP)](#)
 
 ## Core architecture map
