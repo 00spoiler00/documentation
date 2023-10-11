@@ -16,7 +16,7 @@ export default [
                 text: 'Implementation',
                 link: '/new-connecta/implementation-phases/',
                 items: [
-                    { text: 'Phase 01', link: '/new-connecta/implementation-phases/01' },
+                    { text: 'Phase 01: UX MVP', link: '/new-connecta/implementation-phases/01' },
 
                 ],
             },
