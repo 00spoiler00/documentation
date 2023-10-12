@@ -13,14 +13,16 @@
 
 ## TODOs
 
-### General
+### ONWORK
+
+- Create an schema showing the product and its sources.
+- Do not use the API from the CU
+
+### WAITING
 
 - Meet with Esteve to determine NewCloud capabilities, and where and how will we reside there.
-  - Components organization
-  - Expose map proposal
-  - Will we have the ability to fetch the angular components from APIs? (Check CGPT for this)
 
-### Core Architecture
+### QUEUE
 
 - Interface for fn extraction (GenerateBlob->Launch->Await->Fetch) Must use a 1 step pipeline.
 - Add the Channel workers to the architectue

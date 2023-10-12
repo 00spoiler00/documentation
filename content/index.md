@@ -3,14 +3,13 @@
 layout: home
 
 hero:
-  name: "My Documentation"
+  name: "UVE Documentation"
   actions:
     - theme: brand
-      text: New Connecta 
+      text: New Connecta
       link: /new-connecta/
 
 features:
   # - title: API Definitions
   #   details: All the specs about the UVE ecosystem, testeable inline ⚡️
 ---
-
