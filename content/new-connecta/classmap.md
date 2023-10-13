@@ -23,47 +23,47 @@ namespace Orchestration {
     class Orchestrator{
         <<Service>>
     }
-           
+
     class Customer {
         int Id Pk
     }
-    
+
     class Recipe {
         int Id Pk
         string Name
     }
-    
+
     class Cook {
         int Id Pk
         datetime started_at
         datetime end_at
     }
-    
+
     class Payload {
         int Id Pk
         string blob_id PK
         enum type "In/Mid/Out"
         datetime created_at
     }
-    
+
     class Cook_Step {
         int Id Pk
         datetime started_at
         datetime end_at
         json payload
     }
-    
+
     class Channel {
         int Id Pk
         string Name
     }
-    
+
     class Worker {
         int Id Pk
         string Name
         string Queue
     }
-    
+
     class Recipe_Step {
         int Id Pk
         int Order
@@ -96,7 +96,7 @@ namespace Storage {
         <<Interface>>
     }
 }
-    
+
 InteractsWithStorage <|-- InteractsWithBlob
 InteractsWithStorage <|-- InteractsWithFS
 
@@ -134,14 +134,14 @@ OutChannel <|-- SFTPChannel
 OutChannel <|-- RESTChannel
 
 Channel <|-- InChannel
-Channel <|-- OutChannel    
-InteractsWithStorage <|-- Channel    
+Channel <|-- OutChannel
+InteractsWithStorage <|-- Channel
 
 ```
 
 ## GENERAL CONCEPTS
-- A legacy recype may exist (agents will always return a recipe, customer and a payload)
 
+- A legacy recype may exist (agents will always return a recipe, customer and a payload)
 
 ## Functional groups
 
@@ -150,10 +150,10 @@ InteractsWithStorage <|-- Channel
 - Will need to be able to identify User/[Recipe|LegacyRecipe]
 
 #### TODO
+
 1. Adopt new interfaces (and Interface extensions)
 
 #### BLOCKING TODO
-
 
 Type: [uService, Library, Class, ???]
 Trigger Interaction: [Messeges, direct calls, ]

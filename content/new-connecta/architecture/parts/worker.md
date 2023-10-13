@@ -24,3 +24,77 @@ This interface must allow to:
 - Store the payload for processing
 - Syncronously launch the task into the orchestrator API
 - Await the result
+
+## Schema
+
+```mermaid
+
+classDiagram
+
+namespace Worker {
+    class WorkerC{
+        <<Abstract>>
+
+    }
+}
+
+Conversor <|-- CUConversor
+
+
+namespace Storage {
+    class InteractsWithStorage{
+        <<Abstract>>
+        GetContent(Identifier): Content
+        PutContent(Content) : Identifier
+    }
+
+    class InteractsWithBlob{
+        <<Interface>>
+    }
+
+    class InteractsWithFS{
+        <<Interface>>
+    }
+}
+
+InteractsWithStorage <|-- InteractsWithBlob
+InteractsWithStorage <|-- InteractsWithFS
+
+namespace Channels {
+
+    class Channel{
+        <<Abstract>>
+        GetCustomer(): Customer
+        GetRecipe(): Recipe()
+        GetPayloadId(): int
+    }
+    class MailBoxChannel
+    class FtpBoxChannel
+    class RESTChannel
+    class SOAPChannel
+    class SFTPChannel
+
+    class InChannel {
+        pullData()
+        triggerEvents()
+    }
+    class OutChannel{
+        pushPayload
+    }
+
+}
+
+InChannel <|-- SOAPChannel
+OutChannel <|-- SOAPChannel
+InChannel <|-- MailBoxChannel
+InChannel <|-- FtpBoxChannel
+InChannel <|-- RESTChannel
+
+OutChannel <|-- SFTPChannel
+OutChannel <|-- RESTChannel
+
+Channel <|-- InChannel
+Channel <|-- OutChannel
+InteractsWithStorage <|-- Channel
+
+```
