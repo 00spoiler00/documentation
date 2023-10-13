@@ -8,18 +8,18 @@ export default [
                 link: '/new-connecta/architecture/',
                 items: [
                     { text: 'Orchestrator', link: '/new-connecta/architecture/parts/orchestrator' },
+                    { text: 'Orchestration API', link: '/new-connecta/architecture/parts/orchestrator_api' },
                     { text: 'Worker', link: '/new-connecta/architecture/parts/worker' },
                     { text: 'Channel', link: '/new-connecta/architecture/parts/channel' },
                 ],
             },
             {
                 text: 'Implementation',
-                link: '/new-connecta/implementation-phases/',
                 items: [
-                    { text: '01 - UX MVP', link: '/new-connecta/implementation-phases/01' },
-                    { text: '02 - Connectors', link: '/wip.md' },
-                    { text: '03 - Workers (Legacy)', link: '/wip.md' },
-                    { text: '04 - Recipes', link: '/wip.md' },
+                    { text: '01 - CU-CRUD-UX', link: '/new-connecta/implementation-phases/01' },
+                    { text: '02 - Recipes', link: '/wip.md' },
+                    { text: '03 - IO (Connectors)', link: '/wip.md' },
+                    { text: '04 - Workers (Legacy)', link: '/wip.md' },
                     { text: '05 - Workers (New)', link: '/wip.md' },
                     { text: '06 - New 𝑓(x)', link: '/wip.md' },
 

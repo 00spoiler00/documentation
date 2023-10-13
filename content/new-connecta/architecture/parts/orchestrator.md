@@ -1,14 +1,12 @@
-# The Orchestrator
+# Orchestrator
 
 ## Roles
 
-- Performs coordination of tasks
+- Performs coordination of tasks, adding business logic between DB models and the queues
 - Handles legacy sequencing based on filename masks
 - Handles new sequencing based recipes.
 - Keeps track _cooks_ (implemetations of recipes or legacy sequences)
-- Keeps track and registrations of all the workers
-- Provides UX structure to frontend via FE_API
-- Relays Workers APIs to the frontend
+- Keeps registers and tracks workers and their properties (management APIs, concurrence, etc.)
 
 ## DataModel
 
@@ -18,17 +16,5 @@ classDiagram
 
 <!--@include: ./datamodels/orchestration.md-->
 
-class Payload {
-    int Id Pk
-    string blob_id PK
-    enum type "In/Mid/Out"
-    datetime created_at
-}
-Recipe_Step "1" -- "1..n" Payload
-
-class CU {
-    <<Service>>
-}
-CU --> Worker
 
 ```

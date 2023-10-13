@@ -2,31 +2,31 @@
 
 ## Main sections
 
-- [Core Architecture (WIP)](./architecture/index.md)
-- [ClassMap (WIP)](./classmap.md)
+- [Core Architecture](./architecture/index.md)
+- [Implementation of Phase 01](./implementation-phases/01.md)
 
 ## OnWork
 
 - Core Architecture
-- Task dependency tree to accomplish the **CU Configuration via NewCloud** [cu-roadmap]
 - General structural classes of the whole project to determine prpoper infrastructures. (Define couplings and decouplings) [schema]
 
 ## TODOs
 
 ### ONWORK
 
-- Create an schema showing the product and its sources.
-- Do not use the API from the CU
+### ON_HOLD
 
-### WAITING
-
-- Meet with Esteve to determine NewCloud capabilities, and where and how will we reside there.
+- Meet with NewCloud's team to determine FE capabilities, where and how will we reside there and how the components will be stored and provided
 
 ### QUEUE
 
-- Interface for fn extraction (GenerateBlob->Launch->Await->Fetch) Must use a 1 step pipeline.
-- Add the Channel workers to the architectue
-- Add the blob creator
+- Add the blob/fs/**storage** service to architectural map
+- Add channels to the architectural map
+
+---
+
+- Interface for fn extraction (GenerateBlob->Launch->Await->Fetch) Must use a 1 step pipeline. Add this to a step in the Legacy Workers phase (04)
+
 - Determine projects & solutions structures
   - How do the projects & solutions group?
   - MonoRepo

@@ -6,6 +6,7 @@ namespace OrchestrationService {
 
     class Recipe {
         int Id Pk
+        int CustomerId
         string Name
     }
 
@@ -17,9 +18,16 @@ namespace OrchestrationService {
 
     class Cook_Step {
         int Id Pk
+        int RecipeStepId
         datetime started_at
         datetime end_at
-        json payload
+        int PayloadId
+    }
+
+    class CooksStep_Payload {
+        int Id Pk
+        int Cook_Id
+        int PayloadId
     }
 
     class Channel {
@@ -35,13 +43,17 @@ namespace OrchestrationService {
 
     class Recipe_Step {
         int Id Pk
+        int ChannelId
+        int WorkerlId
+        int WorkerSetupId
         int Order
-        enum Type "Copy/Zip/Notify/Work/..."
-        json payload
     }
 
-    class Worker {
-        <<Abstract>>
+    class Payload {
+        int Id Pk
+        string blob_id PK
+        enum type "In/Mid/Out"
+        datetime created_at
     }
 
 }
@@ -53,3 +65,6 @@ Recipe_Step "1" -- "0..1" Worker
 Recipe "1" -- "0..n" Cook
 Cook "1" -- "0..n" Cook_Step
 Cook_Step "0..n" -- "1" Recipe_Step
+
+Cook_Step "1" -- "1..n" CooksStep_Payload
+CooksStep_Payload "1" -- "1" Payload
