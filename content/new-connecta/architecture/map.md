@@ -11,7 +11,7 @@ end
 
 style ORCHESTRATOR fill:#333
 
-subgraph LW ["Legacy Worker (CU/CE/CS/...)"]
+subgraph LW ["Legacy Workers (CU/CE/CS/...)"]
 LW_DB[(DB)]
 LW_API(API)
 LW_WORKER(((WORKER)))
@@ -19,7 +19,7 @@ FS((FS))
 
 end
 
-subgraph NW ["[New || Extracted] Worker (N)"]
+subgraph NW ["[New || Extracted] Workers (N)"]
 NW_API(API)
 NW_DB[(DB)]
 NW_WORKER(((WORKER)))

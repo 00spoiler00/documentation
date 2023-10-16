@@ -10,6 +10,7 @@ export default [
                     { text: 'Orchestrator', link: '/new-connecta/architecture/parts/orchestrator' },
                     { text: 'Orchestration API', link: '/new-connecta/architecture/parts/orchestrator_api' },
                     { text: 'Worker', link: '/new-connecta/architecture/parts/worker' },
+                    { text: 'Storage', link: '/new-connecta/architecture/parts/storage' },
                     { text: 'Channel', link: '/new-connecta/architecture/parts/channel' },
                 ],
             },

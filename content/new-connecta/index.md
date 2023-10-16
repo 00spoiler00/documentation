@@ -5,14 +5,11 @@
 - [Core Architecture](./architecture/index.md)
 - [Implementation of Phase 01](./implementation-phases/01.md)
 
-## OnWork
-
-- Core Architecture
-- General structural classes of the whole project to determine prpoper infrastructures. (Define couplings and decouplings) [schema]
-
 ## TODOs
 
 ### ONWORK
+
+- General structural classes of the whole project to determine proper infrastructures. (Define couplings and decouplings) [schema]
 
 ### ON_HOLD
 
@@ -25,7 +22,7 @@
 
 ---
 
-- Interface for fn extraction (GenerateBlob->Launch->Await->Fetch) Must use a 1 step pipeline. Add this to a step in the Legacy Workers phase (04)
+
 
 - Determine projects & solutions structures
   - How do the projects & solutions group?

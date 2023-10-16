@@ -17,16 +17,16 @@ As part of the migration process, chunks of functionality may be gradually extra
 
 In the event that this functionality has been extracted, Legacy workers may implement an **interface** that allows for flow control and the execution of these extracted functionalities using the new orchestration ecosystem, initiated directly from the converter. To achieve this, the interface should allow for the storage of the payload in the blob for processing, initiate a task in the orchestrator, identifying it as a single-step flow, and await its synchronous result in order to proceed with the natural sequential processing typical of these types of Legacy workers.
 
-### Interface for **𝑓n** extraction
+### Interface for **𝑓n** extraction **TBD**
 
 This interface must allow to:
 
 - Store the payload for processing
 - Syncronously launch the task into the orchestrator API
 - Await the result
+- Must use a 1 step pipeline?
 
-### Trait
+### Traits
 
-- InteractsWithStorage (InteractsWithBlob)
-- InteractsWithStorage (InteractsWithFS)
+- InteractsWithStorage (InteractsWithBlob/InteractsWithFS)
 - SubscribesToMq
