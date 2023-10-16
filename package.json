@@ -1,13 +1,8 @@
 {
-  "dependencies": {
-    "sync-request": "^6.1.0",
-    "vue": "^3.3.4"
-  },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.2.3",
-    "mermaid": "^10.4.0",
-    "vitepress": "^1.0.0-rc.14",
-    "vitepress-plugin-mermaid": "^2.0.14"
+    "mermaid": "^10.5.0",
+    "vitepress": "^1.0.0-rc.22",
+    "vitepress-plugin-mermaid": "^2.0.15"
   },
   "scripts": {
     "docs:dev": "vitepress --host 0.0.0.0 dev ",
@@ -16,5 +11,9 @@
     "updateDynamicContent": "node ./.vitepress/customizations/updateDynamicContent.js",
     "testInLocalContainer": "node ./.cicd/dockerization/run.js",
     "deploy": "npm run docs:build && scp -r .vitepress/dist/*  marc@test.latrup.net:/var/www/documentation.latrup.net/public/"
+  },
+  "dependencies": {
+    "sync-request": "^6.1.0",
+    "vue": "^3.3.4"
   }
 }

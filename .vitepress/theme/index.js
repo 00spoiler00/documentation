@@ -1,9 +1,9 @@
-import OpenApiViewer from '../components/OpenApiViewer.vue'
-
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
-import './custom.css'
+import './style.css'
+
+import OpenApiViewer from '../components/OpenApiViewer.vue'
 
 export default {
   extends: Theme,
