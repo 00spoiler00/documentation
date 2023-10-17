@@ -2,8 +2,10 @@ flowchart LR
 
 subgraph NEWCONNECTA ["UX & Orchestration"]
 NEWCONNECTA_DB[(DB)]
-ORCHESTRATION_API(Orchestration API)
-subgraph ORCHESTRATOR ["Orchestrator"]
+ORCHESTRATION_API("Orchestration API
+(uve.connecta.orchestration.api)")
+subgraph ORCHESTRATOR ["Orchestrator
+(uve.connecta.orchestration.orchestrator)"]
 RECIPES(("RECIPES"))
 DOORMAN(("DOORMAN"))
 end
@@ -11,7 +13,7 @@ end
 
 style ORCHESTRATOR fill:#333
 
-subgraph LW ["Legacy Workers (CU/CE/CS/...)"]
+subgraph LW ["Legacy Workers (current repos)"]
 LW_DB[(DB)]
 LW_API(API)
 LW_WORKER(((WORKER)))
@@ -19,7 +21,8 @@ FS((FS))
 
 end
 
-subgraph NW ["[New || Extracted] Workers (N)"]
+subgraph NW ["[New || Extracted] Workers (N)
+(uve.connecta.workers.xxx)"]
 NW_API(API)
 NW_DB[(DB)]
 NW_WORKER(((WORKER)))
