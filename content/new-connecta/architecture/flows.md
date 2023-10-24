@@ -48,9 +48,9 @@ The steps are as follow:
 
 #### AzureApiManagement -> Orchestration.Orchestrator
 
-```/connecta``` serves as the ingress filter
-Azure API Management, receives the request, authenticates the user and routes request as an ingress. 
-It injects the auth token in the request header.
+- ```/connecta``` serves as the ingress filter for Azure API Management
+- AAM receives the request and authenticates the user injecting the header token.
+- AAM routes request as an ingress to Connecta.Orchestration.Orchestrator's API
 
 <table>
     <tr>
@@ -75,11 +75,13 @@ It injects the auth token in the request header.
     </tr>
 </table>
 
-#### Orchestration.Orchestrator-> Worker.UC.APIm
+#### Orchestration.Orchestrator -> Worker.UC.APIm
 
-The Orchestrator creates a new consumer to request data from the Worker.
-Validates the token auth and checks if it has visibility over the provided organizationId (if available)
-Outgoing request authentication in this phase is based in network protection & M2M token
+- The Orchestration.Orchestrator API receives the request, and validates the auth token.
+- The path ```/worker/{workerId}``` indicates the target for the new consumer to be created (stored locally as an entity)
+- If visibility check is required for the requested entity (p.ex by organizationId), it uses th token to validate it
+- The Orchestration.Orchestrator creates a new consumer to request data from the Worker.
+- This new consumer in this phase is based in network protection & M2M token
 
 <table>
     <tr>
