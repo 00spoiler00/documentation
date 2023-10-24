@@ -7,12 +7,25 @@ export default [
                 text: 'Architecture',
                 link: '/new-connecta/architecture/',
                 items: [
-                    { text: 'Orchestrator', link: '/new-connecta/architecture/parts/orchestrator' },
-                    { text: 'Orchestration API', link: '/new-connecta/architecture/parts/orchestrator_api' },
-                    { text: 'Worker', link: '/new-connecta/architecture/parts/worker' },
-                    { text: 'Storage', link: '/new-connecta/architecture/parts/storage' },
-                    { text: 'Channel', link: '/new-connecta/architecture/parts/channel' },
+
+                    {
+                        text: 'Example flows',
+                        link: '/new-connecta/architecture/flows.md',
+                    },
+                    {
+                        text: 'Parts',
+                        items: [
+                            { text: 'Orchestrator', link: '/new-connecta/architecture/parts/orchestrator' },
+                            { text: 'Orchestration API', link: '/new-connecta/architecture/parts/orchestrator_api' },
+                            { text: 'Worker', link: '/new-connecta/architecture/parts/worker' },
+                            { text: 'Storage', link: '/new-connecta/architecture/parts/storage' },
+                            { text: 'Channel', link: '/new-connecta/architecture/parts/channel' },
+                        ],
+                    },
+
                 ],
+
+
             },
             {
                 text: 'Implementation',
