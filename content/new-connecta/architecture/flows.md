@@ -6,20 +6,21 @@ This request exemplifies a request from NewCloud frontend to a worker, (in this 
 
 ### Visual flow
 
+
 ```mermaid
 
 flowchart
-    Browser -- /api/connecta/worker/{workerId}/organization/{organizationId}/setups --> AzureApiManagement 
-    AzureApiManagement -- /worker/{workerId}/organization/{organizationId}/setups --> Orchestration.Orchestrator.API
+    Browser -- /connecta/workers/{workerId}/organizations/{organizationId}/setups --> AzureApiManagement 
+    AzureApiManagement -- /workers/{workerId}/organizations/{organizationId}/setups --> Orchestration.Orchestrator.API
     Orchestration.Orchestrator.API -.-> Orchestration.Orchestrator
-    Orchestration.Orchestrator -- /organization/{organizationId}/setups --> Workers.UC
+    Orchestration.Orchestrator -- /organizations/{organizationId}/setups --> Workers.UC
 ```
 
 Assuming the worker is the Universal Converter, workerId = **uc**
 
 ### Step by step
 
-The steps are as follow:
+The steps are as follows:
 
 #### WebBrowser -> ApiManagement
 
@@ -34,11 +35,14 @@ The steps are as follow:
     </tr>
     <tr>
         <td><b>Target hostname</b></td>
-        <td>{env}.uvesolutions.com</td>
+        <td>api.uve.ai</td>
     </tr>
     <tr>
         <td><b>Target URL</b></td>
-        <td>/api/connecta/worker/uc/organization/{organizationId}/setups</td>
+        <td>
+            /connecta/workers/{workerId}/organizations/{organizationId}/setups (Prod)<br/>
+            /connecta/{$env}/workers/{workerId}/organizations/{organizationId}/setups (Other envs)
+        </td>
     </tr>
     <tr>
         <td><b>Auth</b></td>
@@ -63,11 +67,11 @@ The steps are as follow:
     </tr>
     <tr>
         <td><b>Target hostname</b></td>
-        <td>???</td>
+        <td>connecta-orchestration-orchestrator-{$env}.internal-uvesolutions.com</td>
     </tr>
     <tr>
         <td><b>Target URL</b></td>
-        <td>/worker/{workerId}/organization/{organizationId}/setups</td>
+        <td>/workers/{workerId}/organizations/{organizationId}/setups</td>
     </tr>
     <tr>
         <td><b>Auth</b></td>
@@ -78,7 +82,7 @@ The steps are as follow:
 #### Orchestration.Orchestrator -> Worker.UC.APIm
 
 - The Orchestration.Orchestrator API receives the request, and validates the auth token.
-- The path ```/worker/{workerId}``` indicates the target for the new consumer to be created (stored locally as an entity)
+- The path ```/workers/{workerId}``` indicates the target for the new consumer to be created (stored locally as an entity)
 - If visibility check is required for the requested entity (p.ex by organizationId), it uses th token to validate it
 - The Orchestration.Orchestrator creates a new consumer to request data from the Worker.
 - This new consumer in this phase is based in network protection & M2M token
@@ -94,11 +98,11 @@ The steps are as follow:
     </tr>
     <tr>
         <td><b>Target hostname</b></td>
-        <td>https://connecta-workers-uc-{env}.internal-uvesolutions.com</td>
+        <td>connecta-workers-uc-{$env}.internal-uvesolutions.com</td>
     </tr>
     <tr>
         <td><b>Target URL</b></td>
-        <td>/organization/{oid}/setups</td>
+        <td>/organizations/{organizationId}/setups</td>
     </tr>
     <tr>
         <td><b>Auth</b></td>
