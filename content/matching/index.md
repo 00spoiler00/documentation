@@ -5,6 +5,37 @@
 - Have a clear overview of the current process: **Oriols!!**
 - Clearly define '**Normalization**', '**GeoCoding**', '**Reverse GeoCoding**', '**Matching**'
 
+## Concepts
+
+Normalization: 
+
+## Current Flow
+
+```mermaid
+
+flowchart TD
+
+In --> SanitizeStringAndSplitStructure --> ChooseRequestLanguage
+
+ChooseRequestLanguage -->|ES| FullRequest_ES
+ChooseRequestLanguage -->|INT| FullRequest_INT
+ChooseRequestLanguage -->|GB| FullRequest_GB
+
+FullRequest_ES --> SwapLanguageAndRequest --> RequestsAmbIdiomesConcretsES -->|NoMatches| RequestsTriesDiferentsEstructuresEntitatsES --> LocationsResolvedFromGoogle
+FullRequest_INT --> RequestsAmbIdiomesConcretsINT -->|NoMatches| RequestsINTNomIAdreca -->|NoMatches| RequestsINTAdreca -->|NoMatches| RequestsINTNoPoblacio --> LocationsResolvedFromGoogle 
+FullRequest_GB --> RequestsAmbIdiomesConcretsGB --> LocationsResolvedFromGoogle
+
+LocationsResolvedFromGoogle --> FilterStablishments 
+FilterStablishments -->|StablishmentFound| UtilitzemDistanciesSobreRespostesIRequests --> SeleccioIOrdenatResultats --> StoreResolvedEntitiesAndCoordinates
+FilterStablishments -->|NoStablishmentFound| SeleccioPrimerResultat --> StoreResolvedEntitiesAndCoordinates
+
+StoreResolvedEntitiesAndCoordinates --> PersistUsedRequestAndResponse --> PersistaAccuracyAchieved
+
+```
+- SanejatString + Split: 
+    - ERegs per extracció + Eliminació caracters no desitjats
+    - Es forka en fució del país (2 implementacions ES; GB;) 
+
 ## Current method
 
 Algorithm strongly based on coordinate matching, thus, based on normalization.
