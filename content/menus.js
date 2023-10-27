@@ -53,6 +53,7 @@ export default [
         text: 'Matching',
         link: '/matching/',
         items: [
+            { text: 'Improvement plan', link: '/matching/upgrade_plan.md' },
         ]
     }
 
