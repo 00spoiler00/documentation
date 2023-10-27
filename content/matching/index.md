@@ -2,7 +2,7 @@
 
 In this section, we address the current behavior of the matching process, encompassing its normalization, geocoding components, and ultimately the matching itself. Both the concepts and a functional schema are included.
 
-Recognizing the need for continuous refinement, we have also crafted a dedicated improvement plan. To further understand our commitment to elevating the process, we encourage you to explore the plan in detail available [here](./improvement_plan.md)
+Recognizing the need for continuous refinement, we have also crafted a dedicated improvement plan. To further understand our commitment to elevating the process, we encourage you to explore the plan in detail available [here](./upgrade_plan.md)
 
 ## Concepts
 
