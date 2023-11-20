@@ -10,7 +10,6 @@ Requirements:
 
 PROS:
 - Quick launch!
-CONS:
 
 ```mermaid
 
@@ -21,43 +20,55 @@ flowchart TD
     
     App --> Connecta-Feature-List-Package --> Connecta-Feature-List-Module
     Connecta-Feature-List-Module --> UveApi-Package 
-    Connecta-Feature-List-Module --> Connector
-    Connecta-Feature-List-Module --> Dataset
-    
     App --> Connecta-Feature-Detail-Package --> Connecta-Feature-Detail-Module
+    
     Connecta-Feature-Detail-Module --> UveApi-Package 
-    Connecta-Feature-Detail-Module --> Connector
-    Connecta-Feature-Detail-Module --> Dataset
+    Connecta-Feature-Detail-Module --> Shared-Package
 
-    UveApi-Package --> EntityV1 --> ApiLib
+    Shared-Package --> Dataset
+    Shared-Package --> Connector
 
-    UveSharedEntities-Package Entities
+    UveApi-Package --> EntityV1 --> ApiLib-Module
+
+    Connecta-Feature-List-Module --> UveSharedEntities-Package 
+    Connecta-Feature-Detail-Module --> UveSharedEntities-Package 
+    
+    UveSharedEntities-Package --> Entities
 
 ```
-## PHASE 2: Recipe,Map & UC 
+## PHASE 2: New architecture
+
+New needs:
+- Using overengineered components for the requirements
+- Lack of customization
+- New version of API consumer required (Not only CRUD or entityVx)
+- NewConnecta Tool will require different components, grouped into a module
+- Single library for connecta, packing Services (ApiConsumer, etc..) and Components. 
 
 ```mermaid
 
 flowchart TD
 
-    Module[(Connecta Module)]
-    Components((Components))
-    Services((Services))
+    App --> ConnectaModule
 
-    App --> Module
+    ConnectaModule --> Api
+    ConnectaModule --> Router
+    ConnectaModule --> RecipeList
+    ConnectaModule --> RecipeEdit/View/Create
+    ConnectaModule --> Map
 
     subgraph Services
-        Module --> Api
-        Module --> Router
         Api --> Interceptors
         Interceptors --> AuthInterceptor
         Interceptors --> ExceptionInterceptor
     end
+
     
-    Module --> Components
-    Components --> RecipeList
-    Components --> RecipeEdit/View/Create
-    Components --> Map
+    subgraph Components
+        RecipeList
+        RecipeEdit/View/Create
+        Map
+    end
     
 
 ```
