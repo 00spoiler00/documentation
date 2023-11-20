@@ -13,7 +13,13 @@ export default [
                         link: '/new-connecta/architecture/flows.md',
                     },
                     {
-                        text: 'Parts',
+                        text: 'Frontend',
+                        items: [
+                            { text: 'FE library evolution proposal', link: '/new-connecta/architecture/frontend/module-architecture-proposal' },
+                        ],
+                    },
+                    {
+                        text: 'Backend',
                         items: [
                             { text: 'Orchestrator', link: '/new-connecta/architecture/parts/orchestrator' },
                             { text: 'Orchestration API', link: '/new-connecta/architecture/parts/orchestrator_api' },
@@ -22,10 +28,7 @@ export default [
                             { text: 'Channel', link: '/new-connecta/architecture/parts/channel' },
                         ],
                     },
-
                 ],
-
-
             },
             {
                 text: 'Implementation',
@@ -55,6 +58,13 @@ export default [
         items: [
             { text: 'Improvement plan', link: '/matching/upgrade_plan.md' },
         ]
-    }
+    },
+    {
+        text: 'General',
+        items: [
+            { text: 'Data model', link: '/general/datamodel.md' },
+        ]
+    },
+
 
 ]
