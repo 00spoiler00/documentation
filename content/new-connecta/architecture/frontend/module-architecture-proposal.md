@@ -3,7 +3,7 @@
 Requirements:
 
 - No requirement for customized components
-- Simplification of tool to a simple CRUD of UCSetupç
+- Simplification of tool to a simple CRUD of UCSetup
 - No graphical UX requirements
 - Possibility to reuse existing API consumers
 - Minimal validation & error handling
