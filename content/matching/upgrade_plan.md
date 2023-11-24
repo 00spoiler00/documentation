@@ -19,6 +19,8 @@
 - Non geocoded
     - Adopt ML model
 
+If both branches success, a converged ML version, including geographic and non geographic matches could be created to further improve the process.
+
 ## Proposed Roadmap and current state
 
 ```mermaid
@@ -26,6 +28,8 @@
  gitGraph
        
     commit id: "Current Model"
+    commit id: "Identify failed cases"
+    commit id: "Create testing Dataset"
 
     branch NonGeographicMatching
     checkout NonGeographicMatching
@@ -34,7 +38,6 @@
 
     branch GeographicMatching
     checkout GeographicMatching
-        commit id: "Create testing Dataset"
         commit id: "Add new quality providers"
 
         branch MapBox
@@ -48,21 +51,27 @@
     commit id: "A/B PerformanceTest"
     branch MultiProviderAlgorithm
     commit id: "Identify low quality encodings"
-    commit id: "Add cross checks"
-    commit id: "Validate algo with testing Dataset"
+    commit id: "Add cross checks multi-request & reversed"
+    commit id: "Validate against Dataset"
     checkout GeographicMatching
     merge MultiProviderAlgorithm
 
+    commit id: "Improve FindPairs using radial search"
+    
     checkout main
     merge GeographicMatching
+
 
     checkout NonGeographicMatching
     commit id: "Define dimensions"
     commit id: "Train model (Coordinates excluded)"
     commit id: "Extend model with coordinates"
+    commit id: "Validate ML against Dataset"
     checkout main
 
     merge NonGeographicMatching
+
+    commit id: "Create a single geo/nonGeo ML model" tag:"TBD"
 
     commit id: "Stablish a refresh methodology"
     commit id: "Launch one shot sanitizing procedure"
@@ -95,6 +104,8 @@ CrossCheck
 
 #### New geoReferentiation providers
 
+**MapBox** is leading the market as a quality based alternative and also keeping costs a bit lower than GM.
+
 - OpenStreetMaps Nominatium TODO
 - **Mapbox:** Free up to 50,000/month, returns a fairly accurate numerical quality indicator, and delivers good results once the addresses are correctly formatted to make it easier.
 - **Google geocode API:** Free up to 2,500 addresses/day. Beyond this, there's a charge, but always at competitive prices. It provides simple yet sufficient quality codes for the assigned coordinates. The accuracy achieved with medium-low quality addresses is remarkable.
@@ -122,6 +133,7 @@ CrossCheck
 - Train a model using existing data, but **exclude the coordinates** to improve perception.
 
 - Get a low computational cost candidates list based on bigger scope (p.ex Postal Code)
-- Can we train the model via RL or via Reg?
+    **Rework this:** Currently, pairs are selected based on arbitrary Google sectors. This could be improved using a radial distance from the inspected point.
+- Can we train the model via RL or via Regression?
 - Given the new candidates, use a comparing trained model (Model have a shape of Input:dimensions * 2, Output: 1)
 
