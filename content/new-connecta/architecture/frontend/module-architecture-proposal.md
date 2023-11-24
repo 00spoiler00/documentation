@@ -15,24 +15,35 @@ PROS:
 
 ```mermaid
 
-flowchart TD
+flowchart LR
 
-    App --> Connecta-Domain-Package --> Connecta-Domain-Module
-    App --> Connecta-Router-Package --> Connecta-Router-Module
+    classDef package fill:#39a2cc
+    classDef module fill:#1c7553
+    classDef component fill:#c7a118
 
-    App --> Connecta-Feature-List-Package --> Connecta-Feature-List-Module
-    Connecta-Feature-List-Module --> UveApi-Package
-    App --> Connecta-Feature-Detail-Package --> Connecta-Feature-Detail-Module
+    App:::module
+
+    App --> Connecta-Domain-Package:::package --> Connecta-Domain-Module:::module
+    App --> Connecta-Router-Package:::package --> Connecta-Router-Module:::module
+
+    App --> Connecta-Feature-List-Package:::package --> Connecta-Feature-List-Module:::module
+    Connecta-Feature-List-Module:::module --> UveApi-Package:::package
+    Connecta-Feature-List-Module --> ListComponent:::component
+
+    App --> Connecta-Feature-Detail-Package:::package --> Connecta-Feature-Detail-Module:::module
+    Connecta-Feature-Detail-Module --> DetailComponent:::component
+    Connecta-Feature-List-Module --> Shared-Package:::package
+
 
     Connecta-Feature-Detail-Module --> UveApi-Package
-    Connecta-Feature-Detail-Module --> Shared-Package
+
 
     Shared-Package --> Dataset
     Shared-Package --> Connector
 
-    UveApi-Package --> EntityV1 --> ApiLib-Module
+    UveApi-Package --> EntityV1 --> ApiLib-Module --> ...
 
-    Connecta-Feature-List-Module --> UveSharedEntities-Package
+    Connecta-Feature-List-Module --> UveSharedEntities-Package:::package
     Connecta-Feature-Detail-Module --> UveSharedEntities-Package
 
     UveSharedEntities-Package --> Entities
@@ -50,18 +61,20 @@ New needs:
 
 ```mermaid
 
-flowchart TD
+flowchart LR
 
-    classDef module fill:#48CAFF
-    classDef component fill:#29A877
-    classDef other fill:#FBCB1F
+    classDef module fill:#39a2cc
+    classDef component fill:#1c7553
+    classDef other fill:#c7a118
+    classDef package fill:#751c53
+    classDef service fill:#531c75
 
 
-    App:::module --> ConnectaPackage
+    App:::module --> ConnectaPackage:::package
     ConnectaPackage --> ConnectaModule:::module
     ConnectaPackage ---> ConnectaAssets:::other
 
-    ConnectaModule --> Api:::service
+    ConnectaModule --> ConnectaApi:::service
     ConnectaModule --> Router:::module
     ConnectaModule --> Entities:::other
     ConnectaModule --> DashBoardMenu:::component
@@ -69,7 +82,7 @@ flowchart TD
     ConnectaModule --> UCDetailModule:::module
 
     subgraph Services
-        Api --> Interceptors:::other
+        ConnectaApi --> Interceptors:::other
         Interceptors --> BaseUrl:::other
         Interceptors --> Auth:::other
         Interceptors --> ExceptionHandler:::other
@@ -84,7 +97,8 @@ flowchart TD
         UCDetail
     end
 
-    Auth-.->SessionService
+    Auth-.-SessionService:::service
+    BaseUrl-.-EnvironmentService:::service
 
 ```
 
@@ -97,51 +111,62 @@ New needs:
 
 ```mermaid
 
-flowchart TD
+flowchart LR
 
-    classDef module fill:#48CAFF
-    classDef component fill:#29A877
-    classDef other fill:#FBCB1F
+    classDef module fill:#39a2cc
+    classDef component fill:#1c7553
+    classDef other fill:#c7a118
+    classDef package fill:#751c53
+    classDef service fill:#531c75
 
-
-    App:::module --> ConnectaPackage
+    App:::module --> ConnectaPackage:::package
     ConnectaPackage --> ConnectaModule:::module
     ConnectaPackage ---> ConnectaAssets:::other
 
-    ConnectaModule --> Api:::service
+    ConnectaModule --> ConnectaApi:::service
     ConnectaModule --> Router:::module
     ConnectaModule --> Entities:::other
     ConnectaModule --> MapModule:::module
     MapModule --> Map:::component
-    MapModule --> MapBox:::component
-    MapModule --> MapConnection:::component
+    MapModule --> MapBoxElement:::component
+    MapModule --> MapConnectionElement:::component
     MapModule --> MapElementEditor:::component
-    ConnectaModule --> UCListModule:::module
-    ConnectaModule --> UCDetailModule:::module
+
+    ConnectaModule --> NodeSetup_Module:::module
+    NodeSetup_Module --> Abstract_NodeSetup_Indexing:::component
+    Abstract_NodeSetup_Indexing:::component -.-> NodeSetupIndexing_1:::component
+    Abstract_NodeSetup_Indexing:::component -.-> NodeSetupIndexing_2:::component
+    NodeSetup_Module --> Abstract_NodeSetup_Editing:::component
+    Abstract_NodeSetup_Editing:::component -.-> NodeSetup_Editing_1:::component
+    Abstract_NodeSetup_Editing:::component -.-> NodeSetup_Editing_2:::component
 
     subgraph Services
-        Api --> Interceptors:::other
+        ConnectaApi --> Interceptors:::other
         Interceptors --> BaseUrl:::other
         Interceptors --> Auth:::other
         Interceptors --> ExceptionHandler:::other
     end
 
 
-    subgraph Features
-        UCListModule --> UCList:::component
-        UCDetailModule --> UCDetail:::component
-        UCList
-        UCDetail
+    subgraph NodeFeatures
+        NodeSetup_Module
+        Abstract_NodeSetup_Indexing:::component
+        NodeSetupIndexing_1:::component
+        NodeSetupIndexing_2:::component
+        Abstract_NodeSetup_Editing:::component
+        NodeSetup_Editing_1:::component
+        NodeSetup_Editing_2:::component
     end
 
     subgraph MapFeatures
         MapModule:::module
         Map
-        MapBox
-        MapConnection
+        MapBoxElement
+        MapConnectionElement
         MapElementEditor
     end
 
-    Auth-.->SessionService
+    Auth-.-SessionService:::service
+    BaseUrl-.-EnvironmentService:::service
 
 ```
