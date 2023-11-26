@@ -10,7 +10,7 @@
     "docs:build": "npm run updateDynamicContent && vitepress build",
     "updateDynamicContent": "node ./.vitepress/customizations/updateDynamicContent.js",
     "testInLocalContainer": "node ./.cicd/dockerization/run.js",
-    "deploy": "npm run docs:build && scp -r .vitepress/dist/*  marc@test.latrup.net:/var/www/documentation.latrup.net/public/"
+    "deploy": "npm run docs:build && ssh marc@test.latrup.net rm -Rf /var/www/documentation.latrup.net/public/* && scp -r .vitepress/dist/*  marc@test.latrup.net:/var/www/documentation.latrup.net/public/"
   },
   "dependencies": {
     "sync-request": "^6.1.0",
