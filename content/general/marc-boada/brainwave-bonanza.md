@@ -10,13 +10,13 @@ This section is my personal kitchen where I whip up all the ideas simmering from
 
 #### Assistant GPTs (Tailored AI-driven advisory services)
 
-- **UVE Comercial Assistant**: Leveraging your company's current comercial data to enhance UVE service introduction to client searching for solutions. [DONE] [DEMO](https://chat.openai.com/g/g-vTxa55icX-uve-route-to-market-expert)
-- **GPTs Customer support Assitant**: Trained with the developer portal knowledge (to be improved), could perform a first level support attendance, _minimizing time/geographic company growth impact_. [TODO]
-- **GPTs Customer Consultant Assistant**: Leveraging your company's unique data to enhance client strategies and decision-making. [TODO] [PEP]
-- **GPTs Internal strategist Assitant**: Brainwave oriented GPTs, trained with company & market context, educated for business strategic proposals based on input and realtime status. [TODO]
-- **GPTs Internal support Assitant**: Trained with the internal [documentation portal](#other-general-raw-concepts-or-improvements), could provide a fast and confiable response to UVE task, procedures, etc, to any internal worker. [TODO]
+- **UVE Comercial Assistant**: Leveraging your company's current comercial data to enhance UVE service introduction to client searching for solutions. ✅ [DEMO](https://chat.openai.com/g/g-vTxa55icX-uve-route-to-market-expert)
+- **GPTs Customer support Assitant**: Trained with the developer portal knowledge (to be improved), could perform a first level support attendance, _minimizing time/geographic company growth impact_. ⛏️
+- **GPTs Customer Consultant Assistant**: Leveraging your company's unique data to enhance client strategies and decision-making. ⛏️ [PEP]
+- **GPTs Internal strategist Assitant**: Brainwave oriented GPTs, trained with company & market context, educated for business strategic proposals based on input and realtime status. ⛏️
+- **GPTs Internal support Assitant**: Trained with the internal [documentation portal] ⛏️(#other-general-raw-concepts-or-improvements), could provide a fast and confiable response to UVE task, procedures, etc, to any internal worker. ⛏️
 
-\*All the assistants are subject to grat improvements via acitins [TODO]
+\*All the assistants are subject to grat improvements via acitins ⛏️
 
 #### As an interface
 
@@ -26,7 +26,7 @@ This section is my personal kitchen where I whip up all the ideas simmering from
 #### Data interpretations
 
 - Use of DataAnalysis GPTs in existing dashboards to extract insights
-- As a suggester for UveClient to suggest data extraction queries [DEMO](https://chat.openai.com/g/g-r1tVZp7tK-uve-client-query-composer/c/70a1f094-4b4f-4b02-a4e8-ed69f46b294a)
+- As a suggester for UveClient to suggest data extraction queries ✅ [DEMO](https://chat.openai.com/g/g-r1tVZp7tK-uve-client-query-composer/c/70a1f094-4b4f-4b02-a4e8-ed69f46b294a)
 
 ### Predictive & Interpretation
 
