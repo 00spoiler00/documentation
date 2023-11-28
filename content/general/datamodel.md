@@ -1,15 +1,37 @@
-# Data model
+# Data models
 
 This section will receive gradual updates of UVE's datamodels
 
 ## Connecta
 
+### Universal Converter Entities
+
+```mermaid
+erDiagram
+
+    Organization ||--|{ UniversalConverterSetup : ""
+    UniversalConverterSetup }|--o| UniversalConverterSetupTemplate : ""
+    UniversalConverterSetup ||--|{ UniversalConverterSetupFieldGenerator :  ""
+    UniversalConverterSetupTemplate ||--|{ UniversalConverterSetupFieldGenerator : ""
+
+    UniversalConverterSetup {
+        object OrigenProps
+        object DestinoProps
+    }
+
+```
+
+### POS <> Contacts
+
 ```mermaid
 
 erDiagram
-    DISTRIBUIDOR ||--|{ PDV : ""
-    PDV }|--|| PDV_MATCH : ""
-    PDV_MATCH ||--|{ CONTACT : ""
-    PDV ||--|{ CONTACT : "new"
+    DISTRIBUIDOR ||--|{ POS : ""
+    POS }|--|| POS_MATCH : ""
+    POS_MATCH ||--|{ CONTACT : "relationship to be deleted"
+    POS ||--|{ CONTACT : "relationship to be created"
+```
+
+```
 
 ```
