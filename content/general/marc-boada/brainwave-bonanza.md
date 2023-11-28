@@ -44,13 +44,14 @@ Areas where a predictive or data visualization (refer to [strategy](#strategy-co
 
 #### Prediction
 
-- Impreove the multichannel experience, generating DevelotoTraAlgo per millora multicanal. (3 sortides canal , multi input, entrada sequecial, transformers)
+- Improve the multichannel experience, generating algo to improve multichannel efficency.
+  **(n x channels , n x input, time sequences -> transformers)**
 
-## Strategy concepts
+## Strategy
 
 ### Product
 
-Product tweaking ideas.
+Market transform and product tweaking ideas to add value.
 
 #### Past
 
@@ -96,7 +97,8 @@ Provide differentiation by adding visibility and readability to complex data pro
 
 ## Culture and team
 
-- Should we enforce GPT in the team? You have to be trained to it!
+- Should we enforce GPT in the team? You have to be trained to it! Make it a culture.
+  (Its like googling properly, a technique)
 
 ## Other general RAW concepts or improvements
 
