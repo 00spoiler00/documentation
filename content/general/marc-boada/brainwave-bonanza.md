@@ -2,13 +2,54 @@
 
 This section is my personal kitchen where I whip up all the ideas simmering from market inputs, colleague insights, or those sleepless night specials!
 
-## Connexionist AI
+## AI
 
-### NLPs
+### AIs data clustering with advanced data visualization
 
-- RAG: "Retreival Augmented Generation": RAG is an AI framework for retrieving facts from an external knowledge base to ground large language models (LLMs) on the most accurate, up-to-date information and to give users insight into LLMs' generative process. [more info](https://research.ibm.com/blog/retrieval-augmented-generation-RAG)
+Areas where next gen data visualization (refer to [strategy](#strategy-concepts)) could provide differential value.
+Clustering for untagged data will help finding patterns and pushing human strategist capabilities. 
+Provide differentiation by adding visibility and readability to complex data promoting a tandem between human and machine provided solutions and thus avoiding black-box solutions.
+**Review [graphex](https://app.graphext.com/projects/UHJvamVjdC03MzA1Mg==/v/data) use case.** victoriano@graphext.com
 
-#### Assistant GPTs (Tailored AI-driven advisory services)
+- Clustering for data interpretations
+- Allow experts from domain to read complexity.
+- Validate predictive techniques, being supervised by human domain knowledge.
+
+
+### Customer Profile management: Recomendation & Modulation (General Connexionist AI)
+
+75% Netflix is consumed via RS
+35% Amazon! is consumed via RS
+
+*Recomendation*
+Creation of recommendation matrix via correlated behaviors & attribute/segment. Dimensions:
+- CustomerAttributes 
+- CustomerHistory
+- ProductAttributes 
+- ProductHistory
+
+*Modulatation*
+Use a clustering tools based on sells (products/prodAttributes/...) VS customer to find patterns and modulate them via offer.
+
+__Do we valuate the performance of our recomendations system? Do we retrain or adjust it?__
+
+### CR next action prediction (Pep) (General Connexionist AI)
+
+- Improve the multichannel experience, generating 'recommendation matrix' for next action, to improve multichannel efficency.
+  **(n x channels , n x input, time sequences -> transformers)** 
+
+### Route optimization (sell better!) (General Connexionist AI)
+
+- Street planned visits (From cloud or even in street): Improved performance. Based on suggestion. Feeds itself from real agent gps track.
+- Delivery routes for distributors. Improved costs & performance. Desification. (do feedback to street delivery dates based on load, availability, etc..)
+
+**Data acquisition for future implementations:**
+- Track and store street app instances routes: Route optimization data to feed algos.
+- Street as an input for images and Image Recognition classifications (CLIP tagging)
+
+### NLPs AI Assistant/Copilots GPTs (Tailored AI-driven advisory services)
+
+RAG Concept: "Retreival Augmented Generation": RAG is an AI framework for retrieving facts from an external knowledge base to ground large language models (LLMs) on the most accurate, up-to-date information and to give users insight into LLMs' generative process. [more info](https://research.ibm.com/blog/retrieval-augmented-generation-RAG)
 
 - **UVE Comercial Assistant**: Leveraging your company's current comercial data to enhance UVE service introduction to client searching for solutions. ✅ [DEMO](https://chat.openai.com/g/g-vTxa55icX-uve-route-to-market-expert)
 - **GPTs Customer support Assitant**: Trained with the developer portal knowledge (to be improved), could perform a first level support attendance, _minimizing time/geographic company growth impact_. ⛏️
@@ -16,36 +57,27 @@ This section is my personal kitchen where I whip up all the ideas simmering from
 - **GPTs Internal strategist Assitant**: Brainwave oriented GPTs, trained with company & market context, educated for business strategic proposals based on input and realtime status. ⛏️
 - **GPTs Internal support Assitant**: Trained with the internal [documentation portal] ⛏️(#other-general-raw-concepts-or-improvements), could provide a fast and confiable response to UVE task, procedures, etc, to any internal worker. ⛏️
 
-\*All the assistants are subject to grat improvements via acitins ⛏️
+\*All the assistants are subject to gerat improvements via acitins ⛏️
 
-#### As an interface
+### NLPs As a general new HCI interface
 
+- Use voice & text as base interface to provide inputs.
 - Improve street user efficiency and customer perception using form auto filling via voice input: Use whishper + NLP to translate into a prefilled form. (Assisted)
 - As a supporting scaffolding tool fro 'potentials' custom projects. Now they are completely manual?
 
-#### Data interpretations
+### CoPilot & GPT for Culture and team
+
+- Train people into CoPilot? Multiple opinions. [GitHub](https://github.blog/2022-09-07-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+- Should we enforce GPT in the team? You have to be trained to it! Make it a culture.
+  (Its like googling properly, a technique)
+- Maybe use pretrained GPTs for departemnts (use specific style, be concise, .....)
+
+
+### NLPs for Data interpretations
 
 - Use of DataAnalysis GPTs in existing dashboards to extract insights
 - As a suggester for UveClient to suggest data extraction queries ✅ [DEMO](https://chat.openai.com/g/g-r1tVZp7tK-uve-client-query-composer/c/70a1f094-4b4f-4b02-a4e8-ed69f46b294a)
 
-### Predictive & Interpretation
-
-Areas where a predictive or data visualization (refer to [strategy](#strategy-concepts)) system could provide differential value.
-
-#### Route optimiztion (sell better!)
-
-- Street planned visits (From cloud or even in street): Improved performance. Based on suggestion. Feeds itself from real agent gps track.
-- Delivery routes for distributors. Improved costs & performance. Desification. (do feedback to street delivery dates based on load, availability, etc..)
-
-#### Data acquisition for future implementations
-
-- Track and store street instances routes: Route optimization data to feed algos.
-- Street as an input for images and Image Recognition classifications (CLIP tagging)
-
-#### Prediction
-
-- Improve the multichannel experience, generating algo to improve multichannel efficency.
-  **(n x channels , n x input, time sequences -> transformers)**
 
 ## Strategy
 
@@ -94,11 +126,6 @@ Provide differentiation by adding visibility and readability to complex data pro
 ### New target potential customers for RTM
 
 - Route to Market for software producers. (Very commonly, I am hearing about software industry requiring a partner structure to solve their lack of commercial and implantation networks.
-
-## Culture and team
-
-- Should we enforce GPT in the team? You have to be trained to it! Make it a culture.
-  (Its like googling properly, a technique)
 
 ## Other general RAW concepts or improvements
 
