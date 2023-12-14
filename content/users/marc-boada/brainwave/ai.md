@@ -1,41 +1,43 @@
 # AI Braniwaves
 
+- Enrich: UveData.
+
 ## AIs data clustering with advanced data visualization
 
 Areas where next gen data visualization (refer to [strategy](#strategy-concepts)) could provide differential value.
-Clustering for untagged data will help finding patterns and pushing human strategist capabilities. 
+Clustering for untagged data will help finding patterns and pushing human strategist capabilities.
 Provide differentiation by adding visibility and readability to complex data promoting a tandem between human and machine provided solutions and thus avoiding black-box solutions.
-**Review [graphex](https://app.graphext.com/projects/UHJvamVjdC03MzA1Mg==/v/data) use case.** victoriano@graphext.com
+**Review [graphex](https://app.graphext.com/projects/UHJvamVjdC03MzA1Mg==/v/data) use case** victoriano@graphext.com
 
 - Clustering for data interpretations
 - Allow experts from domain to read complexity.
 - Validate predictive techniques, being supervised by human domain knowledge.
-
 
 ## Customer Profile management: Recomendation & Modulation (General Connexionist AI)
 
 75% Netflix is consumed via RS
 35% Amazon! is consumed via RS
 
-*Recomendation*
+_Recomendation_
 Creation of recommendation matrix via correlated behaviors & attribute/segment. Dimensions:
-- CustomerAttributes 
+
+- CustomerAttributes
 - CustomerHistory
-- ProductAttributes 
+- ProductAttributes
 - ProductHistory
 
 Also, provide up/cross and DOWN selling on stock or delivery issues
 Profile sharing across distributors?
 
-*Modulatation*
+_Modulatation_
 Use a clustering tools based on sells (products/prodAttributes/...) VS customer to find patterns and modulate them via offer.
 
-__Do we valuate the performance of our recomendations system? Do we retrain or adjust it?__
+**Do we valuate the performance of our recomendations system? Do we retrain or adjust it?**
 
 ## CR next action prediction (Pep) (General Connexionist AI)
 
 - Improve the multichannel experience, generating 'recommendation matrix' for next action, to improve multichannel efficency.
-  **(n x channels , n x input, time sequences -> transformers)** 
+  **(n x channels , n x input, time sequences -> transformers)**
 
 ## Route optimization (sell better!) (General Connexionist AI)
 
@@ -43,6 +45,7 @@ __Do we valuate the performance of our recomendations system? Do we retrain or a
 - Delivery routes for distributors. Improved costs & performance. Desification. (do feedback to street delivery dates based on load, availability, etc..)
 
 **Data acquisition for future implementations:**
+
 - Track and store street app instances routes: Route optimization data to feed algos.
 - Street as an input for images and Image Recognition classifications (CLIP tagging)
 
@@ -71,12 +74,10 @@ RAG Concept: "Retreival Augmented Generation": RAG is an AI framework for retrie
   (Its like googling properly, a technique)
 - Maybe use pretrained GPTs for departemnts (use specific style, be concise, .....)
 
-
 ## NLPs for Data interpretations
 
 - Use of DataAnalysis GPTs in existing dashboards to extract insights
 - As a suggester for UveClient to suggest data extraction queries ✅ [DEMO](https://chat.openai.com/g/g-r1tVZp7tK-uve-client-query-composer/c/70a1f094-4b4f-4b02-a4e8-ed69f46b294a)
-
 
 ## References
 
