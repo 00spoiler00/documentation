@@ -1,68 +1,77 @@
 export default [
     {
-        text: 'NewConnecta',
-        link: '/new-connecta/',
+        text: 'Projects',
         items: [
+            { text: 'Matching updagrade', link: '/projects/matching-upgrade.md' },
             {
-                text: 'Architecture',
-                link: '/new-connecta/architecture/',
+                text: 'NewConnecta',
+                link: '/projects/new-connecta/',
+                collapsed: true,
                 items: [
-
                     {
-                        text: 'Example flows',
-                        link: '/new-connecta/architecture/flows.md',
-                    },
-                    {
-                        text: 'Frontend',
+                        text: 'Architecture',
+                        link: '/projects/new-connecta/architecture/',
                         items: [
-                            { text: 'FE library evolution proposal', link: '/new-connecta/architecture/frontend/module-architecture-proposal' },
+
+                            {
+                                text: 'Example flows',
+                                link: '/projects/new-connecta/architecture/flows.md',
+                            },
+                            {
+                                text: 'Frontend',
+                                items: [
+                                    { text: 'FE library evolution proposal', link: '/projects/new-connecta/architecture/frontend/module-architecture-proposal' },
+                                ],
+                            },
+                            {
+                                text: 'Backend',
+                                items: [
+                                    { text: 'Orchestrator', link: '/projects/new-connecta/architecture/parts/orchestrator' },
+                                    { text: 'Orchestration API', link: '/projects/new-connecta/architecture/parts/orchestrator_api' },
+                                    { text: 'Worker', link: '/projects/new-connecta/architecture/parts/worker' },
+                                    { text: 'Storage', link: '/projects/new-connecta/architecture/parts/storage' },
+                                    { text: 'Channel', link: '/projects/new-connecta/architecture/parts/channel' },
+                                ],
+                            },
                         ],
                     },
                     {
-                        text: 'Backend',
+                        text: 'Implementation',
                         items: [
-                            { text: 'Orchestrator', link: '/new-connecta/architecture/parts/orchestrator' },
-                            { text: 'Orchestration API', link: '/new-connecta/architecture/parts/orchestrator_api' },
-                            { text: 'Worker', link: '/new-connecta/architecture/parts/worker' },
-                            { text: 'Storage', link: '/new-connecta/architecture/parts/storage' },
-                            { text: 'Channel', link: '/new-connecta/architecture/parts/channel' },
+                            { text: '01 - CU-CRUD-UX', link: '/projects/new-connecta/implementation-phases/01' },
+                            { text: '02 - Recipes', link: '/wip.md' },
+                            { text: '03 - IO (Connectors)', link: '/wip.md' },
+                            { text: '04 - Workers (Legacy)', link: '/wip.md' },
+                            { text: '05 - Workers (New)', link: '/wip.md' },
+                            { text: '06 - New 𝑓(x)', link: '/wip.md' },
+
                         ],
+                    },
+                    { text: 'ClassMap', link: '/projects/new-connecta/classmap' },
+                    {
+                        text: 'Others', items:
+                            [
+                                { text: 'Meet 231006', link: '/projects/new-connecta/meets/20231006' },
+                                { text: 'CU Roadmap', link: '/projects/new-connecta/cu-roadmap' },
+                            ]
                     },
                 ],
             },
-            {
-                text: 'Implementation',
-                items: [
-                    { text: '01 - CU-CRUD-UX', link: '/new-connecta/implementation-phases/01' },
-                    { text: '02 - Recipes', link: '/wip.md' },
-                    { text: '03 - IO (Connectors)', link: '/wip.md' },
-                    { text: '04 - Workers (Legacy)', link: '/wip.md' },
-                    { text: '05 - Workers (New)', link: '/wip.md' },
-                    { text: '06 - New 𝑓(x)', link: '/wip.md' },
-
-                ],
-            },
-            { text: 'ClassMap', link: '/new-connecta/classmap' },
-            {
-                text: 'Others', items:
-                    [
-                        { text: 'Meet 231006', link: '/new-connecta/meets/20231006' },
-                        { text: 'CU Roadmap', link: '/new-connecta/cu-roadmap' },
-                    ]
-            },
-        ],
-    },
-    {
-        text: 'New-Features',
-        items: [
-            { text: 'Matching Improvement plan', link: '/matching/upgrade_plan.md' },
         ]
     },
 
     {
-        text: 'General',
+        text: 'Solution ReadMe files',
         items: [
-            { text: 'Data model', link: '/general/datamodel.md' },
+            { text: 'UveCore', link: '/readmes/uve-core/index.md' },
+        ]
+    },
+
+
+    {
+        text: 'Datamodels',
+        items: [
+            { text: 'General', link: '/general/datamodel.md' },
         ]
     },
 
