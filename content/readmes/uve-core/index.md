@@ -254,7 +254,7 @@ Debe abrir el repositorio UveCore que está en el bitbucket o que ya está en su
 
 Si es la primera vez que se hace, no se encontrará la siguiente carpeta ya que nunca se ha realizado una depuración, entonces lo que tendrá que hacer es compilar la solución en modo debug. Una vez que haya creado la carpeta, copie el archivo connecta.ini
 
-![Connecta](Documentacion/Connecta/images/Imagen01.png)
+![Connecta](./Imagen01.png)
 
 Para poder debugar un agente en concreto, hay que indicarlo con el parámetro _-sipagent tambíen indicando el estado de la tarea _-sipstatus
 De esta manera, si actualizamos el **MSG_STATUS** de una tarea, podremos debugarla correctamente
@@ -323,11 +323,11 @@ Y siempre hay que modificar las dos primeras líneas del archivo .blk que nos de
 <MovilizerUploadDataContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" source="CLIENT">
 ```
 
-![Connecta](Documentacion/Connecta/images/Imagen04.png)
+![Connecta](./Imagen04.png)
 
 y agregue esto: xmlns="http://movilitas.com/movilizer/v16"> al final de la tercera
 
-![Connecta](Documentacion/Connecta/images/Imagen05.png)
+![Connecta](./Imagen05.png)
 
 Si es un archivo de salida deberemos ejectutar el sipOutMovilizer, modificando los argumentos de depuración.
 
@@ -347,7 +347,7 @@ Para hacer el debug de datamart, se tendra que ir al proyecto Datamart y abrir e
 
 En el fichero ini se deberá fijar el servidor y la BD donde queremos atacar, y en el clase CargaDatamart se deberá comentar dicha linea:
 
-![Connecta](Documentacion/Connecta/images/Imagen06.png)
+![Connecta](./Imagen06.png)
 
 Y descomentar la siguiente. A partir de allí, según el tipo de “incidencia” que tengamos ya sea, facturación, normalizacion, matching, visibilidad, Alertas,.. Modificaremos la funcion BuildXXX por la que nos toque.
 
@@ -355,7 +355,7 @@ A partir de allí, pondremos los siguientes BreakPoints en las lineas:
 
 La linea 204 nos la saltaremos cuando estemos debugando.
 
-![Connecta](Documentacion/Connecta/images/Imagen07.png)
+![Connecta](./Imagen07.png)
 
 ### Otros PROCESOS internos de UVE:
 
