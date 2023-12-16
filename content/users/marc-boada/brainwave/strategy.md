@@ -44,6 +44,7 @@ Provide differentiation by adding visibility and readability to complex data pro
 
 ## New target potential customers for RTM
 
+- Investigar el Route to Market per pharma? Hospitals, farmàcies, onlines...
 - Route to Market for software producers. (Very commonly, I am hearing about software industry requiring a partner structure to solve their lack of commercial and implantation networks.
 
 ## Other general RAW concepts or improvements

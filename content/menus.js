@@ -53,12 +53,12 @@ export default [
         ],
     },
     {
-        text: 'Matching',
-        link: '/matching/',
+        text: 'New-Features',
         items: [
-            { text: 'Improvement plan', link: '/matching/upgrade_plan.md' },
+            { text: 'Matching Improvement plan', link: '/matching/upgrade_plan.md' },
         ]
     },
+
     {
         text: 'General',
         items: [
