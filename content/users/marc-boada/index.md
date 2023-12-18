@@ -6,6 +6,10 @@
 
 [Straytegy](./brainwave/strategy.md)
 
-## TODO
+## Projects
+
+[CustomProjects SDK](./projects/custom-projects-sdk.md)
+
+## TODOs
 
 [Cloud](./todo/cloud.md)

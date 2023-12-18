@@ -4,12 +4,12 @@
 
 | State  | Issue                                                            | Solution                                                         |
 | ------ | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
-| Refine | How to proceed with documentation in NC?                         |                                                                  |
-| Refine | Define convetions in NC?                                         |                                                                  |
+| Refine | Define conventions in NC?                                        |                                                                  |
 | Todo   | Tamaño columnas especificado no funciona. Resize tampoco         | Translated to NC                                                 |
-| Todo   | Tenemos autocomplete para buscar?                                | Caso de uso: add-to-groups-form-component.                       |
 | Todo   | https://uvesolutions.atlassian.net/browse/UVE-48042, radios+text | Connecta desarrollara                                            |
 | Todo   | Editor de código (mostrar la enumeración de líneas)              | Connecta makes local PoC                                         |
+| Done   | How to proceed with documentation in NC?                         | Provided directives to Team                                      |
+| Done   | Tenemos autocomplete para buscar?                                | Caso de uso: add-to-groups-form-component.                       |
 | Done   | Story books, no funcionen                                        | Resolved                                                         |
 | Done   | Campos numéricos pintan 0 y permiten floats                      | Connecta resuelve componente cloud                               |
 | Done   | Checkboxes no funcionen                                          | Connecta resuelve                                                |
