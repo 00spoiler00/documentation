@@ -2,7 +2,7 @@ export default [
     {
         text: 'Projects',
         items: [
-            { text: 'Matching updagrade', link: '/projects/matching-upgrade.md' },
+            { text: 'Matching upgrade', link: '/projects/matching-upgrade.md' },
             {
                 text: 'NewConnecta',
                 link: '/projects/new-connecta/',
@@ -59,19 +59,17 @@ export default [
             },
         ]
     },
-
     {
         text: 'Solution ReadMe files',
         items: [
             { text: 'UveCore', link: '/readmes/uve-core/index.md' },
         ]
     },
-
-
     {
-        text: 'Datamodels',
+        text: 'Structures&Models',
         items: [
-            { text: 'General', link: '/general/datamodel.md' },
+            { text: 'Connecta', link: '/general/structures-and-models/connecta.md' },
+            { text: 'Reporta', link: '/general/structures-and-models/reporta.md' },
         ]
     },
 

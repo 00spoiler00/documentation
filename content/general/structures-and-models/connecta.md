@@ -1,10 +1,8 @@
-# Data models
+# COnnecta Data models
 
-This section will receive gradual updates of UVE's datamodels
+Partial datamodel for connecta
 
-## Connecta
-
-### Universal Converter Entities
+## Universal Converter Entities
 
 ```mermaid
 erDiagram
@@ -21,7 +19,7 @@ erDiagram
 
 ```
 
-### POS <> Contacts
+## POS <> Contacts
 
 ```mermaid
 
@@ -30,8 +28,4 @@ erDiagram
     POS }|--|| POS_MATCH : ""
     POS_MATCH ||--|{ CONTACT : "relationship to be deleted"
     POS ||--|{ CONTACT : "relationship to be created"
-```
-
-```
-
 ```
