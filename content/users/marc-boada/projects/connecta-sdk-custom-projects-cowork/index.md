@@ -29,6 +29,7 @@
 ## Sessions
 
 [Kickoff 231218](./meets/00_kickoff_231218.md)
+
 [Sessió treball 240109](./meets/01_worksession_240109.md)
 
 ## Estat
