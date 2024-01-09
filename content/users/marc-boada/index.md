@@ -4,11 +4,11 @@
 
 [AI](./brainwave/ai.md)
 
-[Straytegy](./brainwave/strategy.md)
+[Strategy](./brainwave/strategy.md)
 
 ## Projects
 
-[CustomProjects SDK](./projects/custom-projects-sdk.md)
+[Connecta SDK & Custom Projects CoWork](./projects/connecta-sdk-custom-projects-cowork/index.md)
 
 ## TODOs
 
