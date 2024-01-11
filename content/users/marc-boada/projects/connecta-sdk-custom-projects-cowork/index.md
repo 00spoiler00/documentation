@@ -2,7 +2,8 @@
 
 ## Objectiu
 
-- Cocreació i implementació a Custom d'un SDK de Connecta que millori l'eficiència dels desenvolupaments de les integracions
+- Cocreació d'un SDK de Connecta.
+- Implementació a Custom de l'SDK per milorar l'eficiència i la qualitat del les de les integracions
 
 ## Punts clau
 
@@ -34,33 +35,44 @@
 
 - Identificades mancances/àrees de millora tècnica a Custom
 
+**Meet Oriol Ventosa**
+
+- Validada les propostes de millora
+- Confirmada la falta de paquets granulars
+
+**Meet Jordi Camps**
+
+- Validada les propostes de millora
+- Rebaixa en la prioritat en actuacions de pipelines i repositoris
+
 [Sessió treball 240110](#)
+
+- Comentada la viabilitat de les solucions.
+- CP exposa les dimensions de l'auditoria que han iniciat
+-
+- Comentem també la possiblitat de crear una llista de dubtes operatius que tenen.
 
 **TODO**
 
-- Marc Boada
-  - Contrastar les solucions/problemàtiques ideades amb els especialistes de cada àrea
+| Qui | Estat | Concepte                                  | Interlocutors                 | Todo                                                            |
+| --- | ----- | ----------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
+| MB  | Done  | Idees generals (Templates&Paquets)        | Oriol Ventosa, Jordi Camps    | Feedback                                                        |
+| MB  | Done  | Paquets                                   | Oriol Ventosa, Sergio Barja   | No existeixen                                                   |
+| CP  | Wip   | Dataset projectes                         | -                             | Creació per identificar aplicabilitat solucions                 |
+| CP  | Wip   | Definició dels protocols operatius        | -                             | Per identificar punts d'implementaicó de les millores tècniques |
+| CP  | Wip   | Projectes model                           | -                             | Proporcionar projectes de referència per inferir templates      |
+| MB  | Todo  | Paquet Logging (Kibana & Alert)           | Oriol Ventosa, Enric Seijo    | Existeix? Aspectes networking & Seguretat                       |
+| MB  | Todo  | Paquet Correu                             | Oriol Ventosa, Enric Seijo    | Què aporta?                                                     |
+| MB  | Todo  | Paquet UveApiConsumer + Entitats          | Esteve Martín                 | Existeix? Té sentit? Exposar problemàtica Custom                |
+| MB  | Todo  | Procés d'activació dels específics        | Oriol Ventosa, Pau Palà       | Com es fa actualment? Com es podria millorar?                   |
+| MB  | Todo  | Sistemes de parametrització centralitzada | Sergio Barja                  | Problemàtica actual, propostes (&KVaults)                       |
+| MB  | Todo  | Sistemes de plantilles C#                 | Sergio Barja, Esteve Martín   | Exposició propostes i problemàtica actual. Idees?               |
+| MB  | Todo  | Definició d'un CICD abtracte              | Estanis Iglesias, Enric Seijo | Experiències? Feedback?                                         |
+| MB  | Todo  | Standard monitoratge per CE               | Estanis Iglesias, Enric Seijo | Exposició problemàtica, Idees? Protocol?                        |
+| -   | -     | Aplicació de monitoring?                  | -                             | Cal implemnetar alguna solució per integrar la monitorització?  |
 
-| Concepte                                  | Interlocutors                 | Todo                                              |
-| ----------------------------------------- | ----------------------------- | ------------------------------------------------- |
-| Idees generals (Templates&Paquets)        | Oriol Ventosa, Sergio Barja   | Feedback                                          |
-| Paquets                                   | Oriol Ventosa, Sergio Barja   | Existeixen? Mancances? Documentació? Problemàtica |
-| Paquet Logging (Kibana & Alert)           | Oriol Ventosa, Enric Seijo    | Existeix? Aspectes networking & Seguretat         |
-| Paquet Correu                             | Oriol Ventosa, Enric Seijo    | Què aporta?                                       |
-| Procés d'activació dels específics        | Oriol Ventosa, Pau Palà       | Com es fa actualment? Com es podria millorar?     |
-| Sistemes de parametrització centralitzada | Sergio Barja                  | Problemàtica actual, propostes (&KVaults)         |
-| Sistemes de plantilles C#                 | Sergio Barja, Esteve Martín   | Exposició propostes i problemàtica actual. Idees? |
-| Client API C# + Entitats                  | Esteve Martín                 | Existeix? Té sentit? Exposar problemàtica Custom  |
-| Definició d'un CICD abtracte              | Estanis Iglesias, Enric Seijo | Experiències? Feedback?                           |
-| Standard monitoratge per CE               | Estanis Iglesias, Enric Seijo | Exposició problemàtica, Idees? Protocol?          |
+## Next steps
 
-- Jordi Samaniego & Pau de las Heras:
-  - Creació d'un DataSet dels CEs actuals per identificar clusters de millora i aplicabilitat de les eines proposades
-  - Definició dels protocols actuals operatius per identificar on implementar les millores tècniques
-
-## Temes no tractats
-
-- Analisis de mancances en Monitoring (Core?):
-
-  - TempsResposta + Execucions + etc..
-  - Utilitzar infra de monitorització.
+- Analisis del DataSet per identificar clusters.
+- Anàlisis projectes tipus per definir abast de les plantilles
+- Definició de l'ecosistema de paquets ConnectaSDK, quins, complexitat, responsables, sistema de publicació i documentació.
