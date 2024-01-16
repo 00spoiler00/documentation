@@ -37,42 +37,56 @@
 
 **Meet Oriol Ventosa**
 
-- Validada les propostes de millora
+- Validades les propostes de millora
 - Confirmada la falta de paquets granulars
 
 **Meet Jordi Camps**
 
-- Validada les propostes de millora
+- Validades les propostes de millora
 - Rebaixa en la prioritat en actuacions de pipelines i repositoris
 
-[Sessió treball 240110](#)
+[Sessió treball 240119](./meets/01_worksession_240109.md)
 
-- Comentada la viabilitat de les solucions.
-- CP exposa les dimensions de l'auditoria que han iniciat
--
-- Comentem també la possiblitat de crear una llista de dubtes operatius que tenen.
+- Comentat Dataset.
+- Accessos a Repos
+- Anàlisis de totes tipologies de solució
+- Aproximació a arquitectura modular vs multi projecte. Solucionem:
+  - Plantilles
+  - Escalat
+  - Mantenibilitat (plantilles, pequen)
+  - Monitorització del servei
+  - Conistència dels fluxes
+- Possiblitat de migració de serveis locals a AzFn/AKS (salvant DB & Arxius)ç
+  - Si AKS, solucionem DB (Caldria ajustar FileSystem)
+
+**Meet Estanis Iglesias**
+
+- Comentada la possiblitat i suggereix millor l'AKS. De pas, resolem temes de seguretat, coneixem el domini i la gestió de cost/rediment
 
 **TODO**
 
-| Qui | Estat | Concepte                                  | Interlocutors                 | Todo                                                            |
-| --- | ----- | ----------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
-| MB  | Done  | Idees generals (Templates&Paquets)        | Oriol Ventosa, Jordi Camps    | Feedback                                                        |
-| MB  | Done  | Paquets                                   | Oriol Ventosa, Sergio Barja   | No existeixen                                                   |
-| CP  | Wip   | Dataset projectes                         | -                             | Creació per identificar aplicabilitat solucions                 |
-| CP  | Wip   | Definició dels protocols operatius        | -                             | Per identificar punts d'implementaicó de les millores tècniques |
-| CP  | Wip   | Projectes model                           | -                             | Proporcionar projectes de referència per inferir templates      |
-| MB  | Todo  | Paquet Logging (Kibana & Alert)           | Oriol Ventosa, Enric Seijo    | Existeix? Aspectes networking & Seguretat                       |
-| MB  | Todo  | Paquet Correu                             | Oriol Ventosa, Enric Seijo    | Què aporta?                                                     |
-| MB  | Todo  | Paquet UveApiConsumer + Entitats          | Esteve Martín                 | Existeix? Té sentit? Exposar problemàtica Custom                |
-| MB  | Todo  | Procés d'activació dels específics        | Oriol Ventosa, Pau Palà       | Com es fa actualment? Com es podria millorar?                   |
-| MB  | Todo  | Sistemes de parametrització centralitzada | Sergio Barja                  | Problemàtica actual, propostes (&KVaults)                       |
-| MB  | Todo  | Sistemes de plantilles C#                 | Sergio Barja, Esteve Martín   | Exposició propostes i problemàtica actual. Idees?               |
-| MB  | Todo  | Definició d'un CICD abtracte              | Estanis Iglesias, Enric Seijo | Experiències? Feedback?                                         |
-| MB  | Todo  | Standard monitoratge per CE               | Estanis Iglesias, Enric Seijo | Exposició problemàtica, Idees? Protocol?                        |
-| -   | -     | Aplicació de monitoring?                  | -                             | Cal implemnetar alguna solució per integrar la monitorització?  |
+| Qui | Estat | Concepte                                            | Interlocutors                 | Todo                                                            |
+| --- | ----- | --------------------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
+| MB  | Done  | Idees generals (Templates&Paquets)                  | Oriol Ventosa, Jordi Camps    | Feedback                                                        |
+| MB  | Done  | Paquets                                             | Oriol Ventosa, Sergio Barja   | No existeixen                                                   |
+| CP  | Done  | Definició dels protocols operatius                  |                               | Per identificar punts d'implementaicó de les millores tècniques |
+| CP  | Done  | Projectes model                                     |                               | Proporcionar projectes de referència per inferir templates      |
+| CP  | Wip   | Dataset projectes                                   |                               | Creació per identificar aplicabilitat solucions                 |
+| MB  | Wip   | Validació infra arqutectura AzFn/AKS                | Estanis                       | Validació de preus i negoci de les propostes                    |
+| MB  | Wip   | Validació JC (monosolució, AzFn/AKS, sinèrgies SDK) | Jordi Camps                   | Validació de preus i negoci de les propostes                    |
+| MB  | Todo  | Definició arqutectura monoservei AzFn/AKS           |                               | Proposta mòduls i arquitectura del projecte                     |
+| MB  | Todo  | Definició de paquets                                | Oriol Ventosa                 | ApiConsumer/Logging/?                                           |
+| MB  | Hold  | Paquet Logging (Kibana & Alert)                     | Oriol Ventosa, Enric Seijo    | Existeix? Aspectes networking & Seguretat                       |
+| MB  | Hold  | Paquet Correu                                       | Oriol Ventosa, Enric Seijo    | Què aporta?                                                     |
+| MB  | Hold  | Paquet UveApiConsumer + Entitats                    | Esteve Martín                 | Existeix? Té sentit? Exposar problemàtica Custom                |
+| MB  | Hold  | Procés d'activació dels específics                  | Oriol Ventosa, Pau Palà       | Com es fa actualment? Com es podria millorar?                   |
+| MB  | Hold  | Sistemes de parametrització centralitzada           | Sergio Barja                  | Problemàtica actual, propostes (&KVaults)                       |
+| MB  | Hold  | Sistemes de plantilles C#                           | Sergio Barja, Esteve Martín   | Exposició propostes i problemàtica actual. Idees?               |
+| MB  | Hold  | Definició d'un CICD abtracte                        | Estanis Iglesias, Enric Seijo | Experiències? Feedback?                                         |
+| MB  | Hold  | Standard monitoratge per CE                         | Estanis Iglesias, Enric Seijo | Exposició problemàtica, Idees? Protocol?                        |
 
 ## Next steps
 
-- Analisis del DataSet per identificar clusters.
-- Anàlisis projectes tipus per definir abast de les plantilles
-- Definició de l'ecosistema de paquets ConnectaSDK, quins, complexitat, responsables, sistema de publicació i documentació.
+- Anàlisis del DataSet per identificar clústers.
+- Validació proposta Projecte Modular, a AKS/AzFn
+- Exposició dels punts de sinèrgia vs de millora (i next steps)
