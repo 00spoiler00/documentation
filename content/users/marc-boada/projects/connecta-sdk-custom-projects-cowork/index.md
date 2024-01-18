@@ -63,7 +63,25 @@
 
 - Comentada la possiblitat i suggereix millor l'AKS. De pas, resolem temes de seguretat, coneixem el domini i la gestió de cost/rediment
 
-**TODO**
+**Meet Jordi Camps**
+
+- Comentada possiblitat migració a AKS, potser no és adient, doncs és d'us intern i no resol partners
+
+**Sessió treball 240118**
+
+- Anàlisis dels casos proporcionats al dataset
+- Comentem proposta solucions
+
+## Solucions proposades
+
+Les solucions en les que treballem ara mateix son:
+
+- Projecte unic modular a AKS/AzFN.
+- Creació de diversos paquests NuGET
+
+[Taula de soluciones proposades](./solucions.md)
+
+## Taula de TODO
 
 | Qui | Estat | Concepte                                            | Interlocutors                 | Todo                                                            |
 | --- | ----- | --------------------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
@@ -71,9 +89,9 @@
 | MB  | Done  | Paquets                                             | Oriol Ventosa, Sergio Barja   | No existeixen                                                   |
 | CP  | Done  | Definició dels protocols operatius                  |                               | Per identificar punts d'implementaicó de les millores tècniques |
 | CP  | Done  | Projectes model                                     |                               | Proporcionar projectes de referència per inferir templates      |
+| MB  | Done  | Validació JC (monosolució, AzFn/AKS, sinèrgies SDK) | Jordi Camps                   | Validació de les propostes                                      |
 | CP  | Wip   | Dataset projectes                                   |                               | Creació per identificar aplicabilitat solucions                 |
 | MB  | Wip   | Validació infra arqutectura AzFn/AKS                | Estanis                       | Validació de preus i negoci de les propostes                    |
-| MB  | Wip   | Validació JC (monosolució, AzFn/AKS, sinèrgies SDK) | Jordi Camps                   | Validació de preus i negoci de les propostes                    |
 | MB  | Todo  | Definició arqutectura monoservei AzFn/AKS           |                               | Proposta mòduls i arquitectura del projecte                     |
 | MB  | Todo  | Definició de paquets                                | Oriol Ventosa                 | ApiConsumer/Logging/?                                           |
 | MB  | Hold  | Paquet Logging (Kibana & Alert)                     | Oriol Ventosa, Enric Seijo    | Existeix? Aspectes networking & Seguretat                       |
@@ -85,8 +103,18 @@
 | MB  | Hold  | Definició d'un CICD abtracte                        | Estanis Iglesias, Enric Seijo | Experiències? Feedback?                                         |
 | MB  | Hold  | Standard monitoratge per CE                         | Estanis Iglesias, Enric Seijo | Exposició problemàtica, Idees? Protocol?                        |
 
-## Next steps
+### Next steps
 
-- Anàlisis del DataSet per identificar clústers.
-- Validació proposta Projecte Modular, a AKS/AzFn
-- Exposició dels punts de sinèrgia vs de millora (i next steps)
+~~- Fer taula de solucions i aplicabilitat a partner & CP~~
+~~- Exposició dels punts de sinèrgia vs de millora (i next steps)~~
+
+- WIP: Anàlisis del DataSet per identificar clústers.
+
+- Creació proposta Projecte Modular, a AKS/AzFn. Definir esquema i interfases (tecnologia, etc.)
+
+  - Finalitzar esquemes de tipologies, en mode diàleg i seguint projectes tipus.
+  - Preveure partner en aquests nous esquemes i infra. Com gestionem la seva integració i segureat
+  - Aterrar a infra AKS.
+  - Model de negoci que suporti aquesta infra
+
+- Definir, en funció de l'arquitectura, els paquets i els responsables
