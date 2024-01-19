@@ -2,14 +2,18 @@
 
 ## Brainwaves
 
-[AI](./brainwave/ai.md)
-
-[Strategy](./brainwave/strategy.md)
+- [AI](./brainwave/ai.md)
+- [Strategy](./brainwave/strategy.md)
 
 ## Projects
 
-[Connecta SDK & Custom Projects CoWork](./projects/connecta-sdk-custom-projects-cowork/index.md)
+- [CodeStyling across C# projects](./projects/codestyle-csharp.md)
+- [Connecta SDK & Custom Projects CoWork](./projects/connecta-sdk-custom-projects-cowork/index.md)
 
 ## TODOs
 
-[Cloud](./todo/cloud.md)
+- [Cloud](./todo/cloud.md)
+
+## Presentations
+
+- [Developer Portal](./presentations/developer-portal.md)
