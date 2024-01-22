@@ -4,6 +4,8 @@
 
 This project conducts a series of tests to validate the definitions within each record (RecordDefinition) against the definitions in the database. It leverages an automatic identification algorithm and a patch file to facilitate the necessary adaptations between the two.
 
+It is mainly oriented to fix all uses of this information, but mainly the one rendered at the [developer portal](https://dev.uve.ai/api/connecta/structures)
+
 ## Features
 
 - **Automatic Identification Algorithm:** Compares and identifies fields across three sources.
@@ -67,13 +69,14 @@ Run the test locally and observe the results in the ignored 'Reports' folder wit
 
 In cases where a matching table can't be found, the `TargetTable` field should be filled. `Properties` remains null, as field processing is ineffective without a specified table.
 
-````json
+```json
 {
   "RecordName": "ActividadesAgente",
   "DiffIgnored": false,
   "TargetTable": null,
   "Properties": null
 },
+```
 
 ### Example 2: Manually Identified Table, Some Fields Unidentified
 
@@ -102,9 +105,9 @@ Here, the table has been manually mapped and fields processed. Note two field en
     }
   ]
 }
+```
 
-
-__If a record is not listed in this file, it indicates that all processing has been successfully automated.__
+**If a record is not listed in this file, it indicates that all processing has been successfully automated.**
 
 ## Flow
 
@@ -141,6 +144,4 @@ flowchart TD
     LastTable --N--> F3_TableIteration
     LastTable --Y--> End
 
-
-
-````
+```
