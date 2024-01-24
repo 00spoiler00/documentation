@@ -1,8 +1,28 @@
 export default [
     {
+        text: 'Brainwaves',
+        items: [
+            { text: 'AI', link: '/brainwaves/ai.md' },
+            { text: 'Strategy', link: '/brainwaves/strategy.md' },
+        ],
+    },
+    {
+        text: 'Presentations',
+        items: [
+            { text: 'Developer Portal', link: '/presentations/developer-portal.md' },
+        ],
+    },
+    {
+
+
         text: 'Projects',
         items: [
             { text: 'Matching upgrade', link: '/projects/matching-upgrade.md' },
+            { text: 'Connecta SDK', link: '/projects/connecta-sdk-custom-projects-cowork/' },
+            { text: 'C# Code Style', link: '/projects/codestyle-csharp.md' },
+            { text: 'Matching & Normalization Upgrade', link: '/projects/matching-upgrade.md' },
+            { text: 'Frontend PoC', link: '/projects/poc-frontend-editor.md' },
+            { text: 'Record Consistency Checker', link: '/projects/record-consistency-checker.md' },
             {
                 text: 'NewConnecta',
                 link: '/projects/new-connecta/',
@@ -57,19 +77,20 @@ export default [
                     },
                 ],
             },
+
         ]
     },
     {
-        text: 'Solution ReadMe files',
+        text: 'Solution ReadMes',
         items: [
             { text: 'UveCore', link: '/readmes/uve-core/index.md' },
         ]
     },
     {
-        text: 'Structures&Models',
+        text: 'Other',
         items: [
-            { text: 'Connecta', link: '/general/structures-and-models/connecta.md' },
-            { text: 'Reporta', link: '/general/structures-and-models/reporta.md' },
+            { text: 'Connecta', link: '/resources/connecta-datamodels.md' },
+            { text: 'Reporta', link: '/resources/reporta-category-tree.md' },
         ]
     },
 

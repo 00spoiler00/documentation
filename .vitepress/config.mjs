@@ -1,5 +1,5 @@
 import { withMermaid } from "vitepress-plugin-mermaid"
-import { defineConfig } from 'vitepress'
+// import { defineConfig } from 'vitepress'
 import sidebar from "../content/menus"
 
 // https://vitepress.dev/reference/site-config
@@ -9,7 +9,7 @@ export default withMermaid({
   lang: 'en-US',
   title: "Documentation",
 
-  description: "Internal UVE documentation repository",
+  description: "Internal Marc Boada documentation repository",
   head: [
     [
       'link',
@@ -57,13 +57,13 @@ export default withMermaid({
     sidebar,
 
     socialLinks: [
-      { icon: 'linkedin', link: 'https://es.linkedin.com/company/uvesolutions' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/marc-boada-subirana-55503143/' }
     ],
 
-    footer: {
-      message: "UVE Services on Demand S.L.",
-      copyright: "Copyright © 2023-present UVE Services on Demand S.L.",
-    },
+    // footer: {
+    //   message: "UVE Services on Demand S.L.",
+    //   copyright: "Copyright © 2023-present UVE Services on Demand S.L.",
+    // },
 
   }
 })

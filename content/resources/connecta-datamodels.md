@@ -1,4 +1,4 @@
-# COnnecta Data models
+# Connecta Data models
 
 Partial datamodel for connecta
 
