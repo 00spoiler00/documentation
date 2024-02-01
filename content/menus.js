@@ -17,8 +17,9 @@ export default [
 
         text: 'Projects',
         items: [
-            { text: 'Matching upgrade', link: '/projects/matching-upgrade.md' },
             { text: 'Connecta SDK', link: '/projects/connecta-sdk-custom-projects-cowork/' },
+            { text: 'Fronted ModelEditor POC', link: '/projects/front-end-model-editor/' },
+            { text: 'Matching upgrade', link: '/projects/matching-upgrade.md' },
             { text: 'C# Code Style', link: '/projects/codestyle-csharp.md' },
             { text: 'Matching & Normalization Upgrade', link: '/projects/matching-upgrade.md' },
             { text: 'Frontend PoC', link: '/projects/poc-frontend-editor.md' },
