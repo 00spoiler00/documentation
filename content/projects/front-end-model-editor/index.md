@@ -19,7 +19,9 @@
 ## Next steps
 
 - Recollir els requisits funcionals per crear:
-    - Un nou standard a tot NewCloud
+    - Un nou standard a tot NewCloud: 
+        
+        https://www.notion.so/uvesolutions/Requisitos-View-Builder-01af36d25147447fab1878ae6689b07c
     - Un MVP d'aplicació transversal a NewCloud
     - Un MVP d'aplicació a NewConnecta
 - Amb els requisits, pressupostar la conversió de la PoC a cadascun dels possibles productes.
