@@ -20,85 +20,31 @@
 
 ## Metodologia
 
-- Recollida de metodologies actuals en CustomProjects, punts forts i punts dèbils.
-- Obtenir mètriques de casos d'ús de CustomProjects per identificar eines a desenvolupar i prioritats.
+~~- Recollida de metodologies actuals a CustomProjects, punts forts i punts dèbils.~~
+~~- Obtenir mètriques de casos d'ús de CustomProjects per identificar eines a desenvolupar i prioritats.~~
+- Elaboració de l'arquitectura de solucions i validacíó de l'avant projecte (OnWork)
 - Definir i validar les eines integrants de l'SDK.
 - Establir el pla de desenvolupament de les mateixes.
 - Codesenvolupament del SDK entre CustomProjects i Connecta.
-- Implementació de les noves eines en CustomProjects.
+- Publicació de l'SDK
+- Implementació de les noves eines a CustomProjects.
 
-## Sessions
+## Avantprojecte
 
-[Kickoff 231218](./meets/231218.md)
+[Objectius de l'avantprojecte](./avantprojecte.md)
 
-[Sessió treball 240109](./meets/240109.md)
+[Sessions de treball](./sessions-avantprojecte.md)
 
-- Identificades mancances/àrees de millora tècnica a Custom
+[Proposta V1: Mikrokernel & Paquets & Templates plugins](./proposta_01.md) 
+- Projecte unic modular a AKS/AzFN, basat en 'plugins' i 'microkernel' i plantilles 'plugins' __Descartat__
 
-**Meet Oriol Ventosa**
+[Proposta V2 Paquets & Templates projectes tipus](./proposta_02.md) 
+- Creació de diversos paquets NuGET
+- Creació de plantilles de projectes utilitzant els Paquets
+__Pendent Confirmació__
 
-- Validades les propostes de millora
-- Confirmada la falta de paquets granulars
+## Projecte & planificació
 
-**Meet Jordi Camps**
-
-- Validades les propostes de millora
-- Rebaixa en la prioritat en actuacions de pipelines i repositoris
-
-[Sessió treball 240119](./meets/240109.md)
-
-- Comentat Dataset.
-- Accessos a Repos
-- Anàlisis de totes tipologies de solució
-- Aproximació a arquitectura modular vs multi projecte. Solucionem:
-  - Plantilles
-  - Escalat
-  - Mantenibilitat (plantilles, pequen)
-  - Monitorització del servei
-  - Conistència dels fluxes
-- Possiblitat de migració de serveis locals a AzFn/AKS (salvant DB & Arxius)ç
-  - Si AKS, solucionem DB (Caldria ajustar FileSystem)
-
-**Meet Estanis Iglesias**
-
-- Comentada la possiblitat i suggereix millor l'AKS. De pas, resolem temes de seguretat, coneixem el domini i la gestió de cost/rediment
-
-**Meet Jordi Camps**
-
-- Comentada possiblitat migració a AKS, potser no és adient, doncs és d'us intern i no resol partners
-
-**Sessió treball 240118**
-
-- Anàlisis dels casos proporcionats al dataset
-- Comentem proposta solucions
-
-[Sessió de treball 240123](./meets/240123.md)
-
-- Anàlisis de la estructura de diversos projectes.
-
-## Solucions proposades
-
-Les solucions en les que treballem ara mateix son:
-
-- Projecte unic modular a AKS/AzFN, basat en 'plugins' i 'microkernel'
-- Creació de diversos paquests NuGET
-
-[Taula de soluciones proposades](./solucions.md)
-
-### Next steps
-
-1. Separar esquemes extrets de les apps en fases (E + T + L)
-
-[Analisis WIP](./flux-teoric.md)
-
-2. Definir els interfaces de cada fase
-3. Definir els paquets exactament (nom, responsabilitat, mantenidor?)
-4. Validació del concepte de plugin i de l'allotjament a la infra d'UVE i model de negoci.
-5. Creació d'una PoC del projecte Modular, a AKS/AzFn. Definir esquema i interfases (tecnologia, etc.)
-
-#### Done
-
-~~- Preveure partner en aquests nous esquemes i infra. Com gestionem la seva integració i segureat~~
-~~- Fer taula de solucions i aplicabilitat a partner & CP~~
-~~- Exposició dels punts de sinèrgia vs de millora (i next steps)~~
-~~- WIP: Anàlisis del DataSet per identificar clústers.~~
+::: info
+Pendent avantprojecte v2
+:::
