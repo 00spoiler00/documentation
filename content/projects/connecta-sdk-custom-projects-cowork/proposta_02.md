@@ -18,9 +18,7 @@
 
 ## Taula de templates
 
-::: danger
-TODO!
-:::
+[Templates](./templates.md)
 
 ## Taula de paquets
 
