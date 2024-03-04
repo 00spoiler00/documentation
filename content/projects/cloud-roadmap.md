@@ -23,13 +23,11 @@ flowchart TD
     ValidationLibrary:::accent --> FrontValidation
     CustomValidation:::secondary --> FrontValidation
     CrossValidation:::accent --> FrontValidation
-    FrontValidation:::accent --> ConnectaDetailCAX
+    FrontValidation:::accent --> ValidationCAX:::primary --> CAX_MVP
 
-    IntegratedBackEndValidation:::primary --> CAX_MVP
-
-    TailwindCloudIntegration:::secondary --> DaisyCloudIntegration:::secondary --> StreetCompatibilityCheck:::secondary --> CloudLibDependencyValidation:::accent --> UveComponentFramework
+    TailwindCloudIntegration:::secondary --> DaisyCloudIntegration:::secondary --> StreetCompatibilityCheck:::secondary --> CloudLibDependencyValidation:::secondary --> UveComponentFramework:::accent
 
     MantenimientoTablasWrapper:::primary --> CAX_MVP
 
-    UveComponentFramework:::primary --> CAX_MVP:::primary -.-> TBD((TBD)):::base100
+    UveComponentFramework --> CAX_MVP:::primary -.-> TBD((TBD)):::base100
 ```
