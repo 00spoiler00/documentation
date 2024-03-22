@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Conociendo Connecta Tester 2.0</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+    <style>
+        body, html {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+		body:after {
+			content: url(./assets/logo.png);
+			opacity: .1;
+			position: fixed;
+			bottom: 500px;
+			/* left: 20px; */
+			max-height: 150px;
+			/* box-shadow: 5px 5px 10px #000;  */
+		}
+    </style>
+
+	<body>
+		<div class="reveal">
+			<div class="slides" style="font-family: Montserrat;" >
+				
+				<section data-background-color="rgb(41, 168, 119)">
+					<h2 class="r-fit-text">
+						Connecta Tester 2.0
+					</h2>
+				</section>
+
+				<section>
+					<img src="./assets/question-solid.svg" width="200px" height="200px" style="position: absolute; right: 100px; top: 100px; opacity: .3;"/>
+					<section data-background-color="rgb(251, 203, 31)">
+						<h2>¿QUÉ ES?</h2>
+					</section>
+					<section data-background-color="rgb(72, 202, 255)">
+						Test E2E para maximizar calidad de la ETL
+					</section>
+					<section data-background-color="rgb(72, 202, 255)" data-markdown>
+						- Doorman
+						- Integrator
+						- Datamart
+					</section>
+				
+				</section>
+
+				<section>
+
+					<img src="./assets/certificate-solid.svg" width="32px" style="position: fixed; height: 300px; width: 300px; right: 100px; top: 100px; opacity: .3;"/>
+					
+					<section data-background-color="rgb(251, 203, 31)">
+						<h2>¿CUÁLES SON LOS RETOS?</h2>
+					</section>
+
+					<section data-background-color="rgb(72, 202, 255)">
+						<div style="max-width: 30%; margin-right: auto; margin-left: auto; margin-top: 10px;">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+								<g transform="translate(50 50)">
+									<polygon points="50,5 95,95 5,95" style="fill: rgb(41, 168, 119);stroke:rgb(251, 203, 31);stroke-width:10;" />
+									<text x="50" y="-15" text-anchor="middle" font-size="8px" fill="black" style="font-size: 14px; font-family: 'Montserrat', sans-serif;">COBERTURA</text>
+									<image x="40" y="-48" width="16" height="16" href="./assets/signal-solid.svg" />
+									<text x="-10" y="125" text-anchor="middle" font-size="8px" fill="black" style="font-size: 14px; font-family: 'Montserrat', sans-serif;">COSTE</text>
+									<image x="-18" y="130" width="16" height="16" href="./assets/euro-sign-solid.svg" />
+									<text x="110" y="125" text-anchor="middle" font-size="8px" fill="black" style="font-size: 14px; font-family: 'Montserrat', sans-serif;">TIEMPO</text>
+									<image x="102" y="130" width="16" height="16" href="./assets/hourglass-start-solid.svg" />
+								</g>
+							</svg>
+						</div>
+					</section>
+
+					<section data-background-color="rgb(72, 202, 255)">
+						<h4>Algunos datos...</h4>
+						<p class="fragment">Procesos en la muestra:</p>
+						<p class="fragment">~10k, (15-20%)</p>
+						<p class="fragment">Tipos cubiertos:</p>
+						<p class="fragment">>80%</p>
+						<p class="fragment">Tiempo de ejecució ciclo FULL</p>
+						<p class="fragment">~24h</p>
+					</section>
+					
+
+
+				</section>
+				
+				<section>
+					<img src="./assets/clock-solid.svg" width="32px" style="position: fixed; height: 300px; width: 300px; right: 100px; top: 100px; opacity: .3;"/>
+					
+					<section data-background-color="rgb(251, 203, 31)">
+						<h2>¿CUÁNDO SE EJECUTA?</h2>
+					</section>
+					
+					<section  data-background-color="rgb(72, 202, 255)">
+						<p>
+							<h4>Total</h4>
+							<small>Recurrente, como parte ciclo de entrega</small>
+						</p>
+						<p>
+							<h4>Parcial</h4>
+							<small>Bajo demanda</small>
+						</p>
+					</section>
+
+				</section>
+				
+				<section>
+					<img src="./assets/server-solid.svg" width="32px" style="position: fixed; height: 300px; width: 300px; right: 100px; top: 100px; opacity: .3;"/>
+					<section data-background-color="rgb(251, 203, 31)">
+						<h2>¿Y DÓNDE SE EJECUTA?</h2>
+					</section>
+					<section data-background-color="rgb(72, 202, 255)">
+						
+						<p>
+							VM dedicada
+						</p>
+						<p class="fragment">
+							\[\begin{aligned}
+							2 \times \text{versiones} 
+							\times \text{N entornos}
+							+ \text{DBs}
+							\end{aligned} \]
+						</p>
+						<p class="fragment">
+							Automatización del recurso
+						</p>
+						
+					</section>
+				</section>
+				
+				<section>
+					<img src="./assets/gears-solid.svg" width="32px" style="position: fixed; height: 300px; width: 300px; right: 100px; top: 100px; opacity: .3;"/>
+					<section data-background-color="rgb(251, 203, 31)">
+						<h2>¿CÓMO LO HACE?</h2>
+					</section>
+					
+					<section data-background-color="rgb(72, 202, 255)">
+						<p>Preparación entorno de <b>DBs</b></p>
+						<p class="fragment">Deploy de versiones</p>
+						<p class="fragment">Selección datasets fijos</p>
+						<p class="fragment">Obtención datasets aleatorios de productivo</p>
+						<p class="fragment">Ejecución ETL</p>
+						<p class="fragment">Comparación y reporting</p>
+						<p class="fragment">Análisis de resultados...</p>
+						<p class="fragment">... y resolución de incidencias</p>
+					</section>
+					
+				</section>
+				
+				<section>
+					
+					<img src="./assets/backward-solid.svg" width="32px" style="position: fixed; height: 300px; width: 300px; right: 100px; top: 100px; opacity: .3;"/>
+					<section data-background-color="rgb(251, 203, 31)">
+						De donde venimos...
+					</section>
+					
+					<section data-background-color="rgb(72, 202, 255)">
+						<p>
+							<h4>
+								Mejoras del Entorno
+							</h4>
+						</p>
+						<p class="fragment">Espacio dedicado</p>
+						<p class="fragment">Recursos optimizados</p>
+					</section>
+					
+					<section data-background-color="rgb(72, 202, 255)">
+						<p>
+							<h4>
+								Mejora de Ejecución
+							</h4>
+						</p>
+						<p class="fragment">Control de versiones</p>
+						<p class="fragment">Control de muestras</p>
+						<p class="fragment">Control de agentes</p>
+					</section>
+					
+					<section data-background-color="rgb(72, 202, 255)">
+						<p>
+							<h4>
+								Mejora calidad de la cobertura
+							</h4>
+						</p>
+						
+						<p class="fragment">+ Numérica</p>
+						<p class="fragment">+ Tipologías</p>
+						<p class="fragment">Mejor replicación de productivo</p>
+					</section>
+					
+				</section>
+				
+				<section>
+					
+					<img src="./assets/forward-solid.svg" width="32px" style="position: fixed; height: 300px; width: 300px; right: 100px; top: 100px; opacity: .3;"/>
+					<section data-background-color="rgb(251, 203, 31)">
+						...hacia donde vamos
+					</section>
+					
+					<section data-background-color="rgb(72, 202, 255)">
+						Reducción de falsos positivos
+						<p class="fragment">Mejora de numérica (paralelización)</p>
+						<p class="fragment">Optimización del proceso de diagnóstico</p>
+					</section>
+					
+				</section>
+				
+				<section data-background-color="rgb(41, 168, 119)">
+					<h2>
+						¡GRACIAS!
+					</h2>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>

@@ -10,6 +10,7 @@ export default [
         text: 'Presentations',
         items: [
             { text: 'Developer Portal', link: '/presentations/developer-portal.md' },
+            { text: 'Connecta Tester', link: '/live-presentations/connecta-tester' },
         ],
     },
     {
