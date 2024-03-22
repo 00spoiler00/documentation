@@ -23,7 +23,7 @@ export default [
             { text: 'C# Code Style', link: '/projects/codestyle-csharp.md' },
             { text: 'Matching & Normalization Upgrade', link: '/projects/matching-upgrade.md' },
             { text: 'Frontend PoC', link: '/projects/poc-frontend-editor.md' },
-            { text: 'Cloud RoadMap', link: '/projects/cloud-roadmap.md' },
+            { text: 'Cloud/CAX RoadMap', link: '/projects/cloud-roadmap.md' },
             { text: 'Record Consistency Checker', link: '/projects/record-consistency-checker.md' },
             {
                 text: 'NewConnecta',

@@ -1,13 +1,13 @@
-# CAX RoadMap
+# Cloud/CAX RoadMap
 
-## Confección infra CAX
+## Desarrollo CAX
 
 ### Objetivos:
 
 - Reducción de coste, complejidad y mejora velocidad desarrollo: +Developer experience!
-- Mejora visual, en estabilidad y confiabilidad: +User experience!
+- Mejora visual, en estabilidad y confiabilidad: +User experience! (+Homegeniedad)
 
-### Done steps:
+### Steps done:
 
 - MVP Connecta: Sustitución DetailService y componentes shared por sistema templates y componentes standard (UVE_Framework_MVP)
 
